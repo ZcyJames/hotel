@@ -1,0 +1,136 @@
+
+
+
+.clear{clear:both;}
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*积分情况*/
+.points{
+	width:770px;
+}
+/*当前积分*/
+.currentpoints{
+	width:758px;
+	border:1px solid #e7e7e7;
+	height:30px;
+	line-height:30px;
+	margin:0 0 20px 0;
+	padding:0 0 0 10px;
+	background-color:#F5F5F5;
+}
+.pots{
+	color:#006666;
+	font-weight:bold;
+}
+
+/*选项卡*/
+OL LI { MARGIN: 20px }
+
+/*整个选项卡*/
+#con { 
+	WIDTH:770px;
+}
+
+/*选项卡标题*/
+#tags { 
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 0px 10px; 
+	WIDTH: 400px; 
+	PADDING-TOP: 0px; 
+	HEIGHT: 23px; 
+}
+#tags LI { 
+	BACKGROUND:url(../UserInfo/images/tagleft.gif) no-repeat left bottom; 
+	FLOAT: left; 
+	MARGIN-RIGHT: 5px; 
+	LIST-STYLE-TYPE: none; 
+	HEIGHT: 23px; 
+}
+#tags LI A { 
+	PADDING-RIGHT: 10px; 
+	PADDING-LEFT: 10px; 
+	BACKGROUND: url(../UserInfo/images/tagright.gif) no-repeat right bottom; 
+	FLOAT: left; 
+	PADDING-BOTTOM: 0px; COLOR: #999;
+ 	LINE-HEIGHT: 23px; PADDING-TOP: 0px; 
+	HEIGHT: 23px; 
+	TEXT-DECORATION: none; 
+}
+
+
+#tags LI.selectTag { 
+	BACKGROUND-POSITION: left top; 
+	MARGIN-BOTTOM: -2px; 
+	POSITION: relative; 
+	HEIGHT: 25px; 
+}
+#tags LI.selectTag A { 
+	BACKGROUND-POSITION: right top; 
+	COLOR: #000; 
+	LINE-HEIGHT: 25px;
+	 HEIGHT: 25px; 
+}
+
+/*选项卡下面的内容*/
+#tagContent {  
+	BORDER-TOP: #aecbd4 1px solid;
+	PADDING-TOP: 1px;
+	BACKGROUND-COLOR: #fff; 
+}
+.tagContent {  
+	DISPLAY: none;
+	PADDING-BOTTOM: 10px; 
+	WIDTH: 750px; 
+	COLOR: #474747; 
+	PADDING-TOP: 10px; 
+	HEIGHT:auto;
+}
+#tagContent DIV.selectTag {
+	DISPLAY: block;
+}
+/*选项卡，标签下的内容*/
+.trbg{
+	width:750px;
+	height:30px;
+	background:url(../UserInfo/images/trbg.jpg) no-repeat;
+}
+.tdborder{
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+}
+/*有关积分情况说明*/
+.pointhelp{
+	margin:30px 0 0 0;
+	width:750px;
+	padding:10px;
+	background-color:#F3F3F3;
+	line-height:20px;
+}
+
+
+
+
+

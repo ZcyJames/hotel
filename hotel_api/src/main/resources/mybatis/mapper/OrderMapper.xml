@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.hotel_api.dao.IOrderDao">
+    <cache eviction="LRU" flushInterval="200000" readOnly="true" size="1024"/>
+
+    <insert id="addOrderOne" parameterType="map">
+        insert into tb_order
+        (ORDER_ID,HOUSE_ID,ORDER_COMEDATE,ORDER_LEAVEDATE,
+        ORDER_TOTALPRICE,ORDER_LIVEDAYS,ORDER_STATUS,USER_ID)
+        values(#{orderId}, #{houseId},#{comeDate},#{leaveDate},
+        #{totalPrice},#{liveDays},0,#{userId})
+    </insert>
+
+    <select parameterType="map" resultType="map" id="getOrderById">
+       select * from tb_order where ORDER_ID=#{orderId}
+     </select>
+
+    <update id="changeInfo" parameterType="map">
+        UPDATE tb_order AS o SET o.USER_NAME = #{odererName} , o.USER_PHONE = #{orderPhone} WHERE o.ORDER_ID = #{orderId}
+    </update>
+
+    <update id="changeStatus" parameterType="map">
+        UPDATE tb_order SET ORDER_STATUS = 1 WHERE ORDER_ID = #{orderId}
+    </update>
+</mapper>

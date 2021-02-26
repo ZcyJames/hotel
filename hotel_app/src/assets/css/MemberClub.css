@@ -1,0 +1,125 @@
+
+
+
+.clear{clear:both;}
+
+
+
+/*选项卡*/
+OL LI { MARGIN: 20px }
+
+/*整个选项卡*/
+#con { 
+	WIDTH:960px;
+}
+
+/*选项卡标题*/
+#tags { 
+	WIDTH: 960px; 
+	HEIGHT: 30px;
+	background:url(../UserInfo/images/memberclub0.jpg) no-repeat; 
+}
+#tags LI { 
+	BACKGROUND:url(../UserInfo/images/memberclub2.jpg) no-repeat left bottom; 
+	FLOAT: left; 
+	LIST-STYLE-TYPE: none; 
+	HEIGHT: 30px;
+	width:100px; 
+	font-size:14px;
+}
+#tags LI A {
+	FLOAT: left;
+	COLOR:#FFFFFF;
+ 	LINE-HEIGHT: 30px;
+	HEIGHT: 30px; 
+	width:100px;
+	TEXT-DECORATION: none;
+	text-align:center; 
+}
+
+
+#tags LI.selectTag { 
+	MARGIN-BOTTOM: -2px;
+	HEIGHT: 30px; 
+}
+#tags LI.selectTag A {
+	font-weight:bold;
+	LINE-HEIGHT: 30px;
+	HEIGHT: 30px;
+	width:100px;
+	text-align:center;
+	background:url(../UserInfo/images/memberclub1.jpg) no-repeat;
+}
+
+/*选项卡下面的内容*/
+#tagContent {  
+	BORDER-TOP: #aecbd4 1px solid;
+	PADDING-TOP: 1px;
+	BACKGROUND-COLOR: #fff; 
+}
+.tagContent {  
+	DISPLAY: none;
+	PADDING-BOTTOM: 10px; 
+	WIDTH: 960px; 
+	COLOR: #474747; 
+	PADDING-TOP: 10px; 
+	HEIGHT:auto;
+}
+#tagContent DIV.selectTag {
+	DISPLAY: block;
+}
+
+
+
+
+
+/*选项卡下面内容，左侧部分*/
+#left{
+	width:248px;
+	margin:0 10px 0 0;
+	float:left;
+	height:500px;
+	border:1px solid #e7e7e7;
+	background-color:#F7F7F7;
+}
+#left a{
+	text-decoration:none;
+}
+#left a:hover{
+	text-decoration:underline;
+}
+/*左侧部分,用户基本信息*/
+.User{
+	width:208px;
+	height:160px;
+	border-bottom:1px solid #D5D5D5;
+	padding:20px;
+}
+.useravatar{
+	float:left;
+	margin:0 20px 0 0;
+}
+.User ul{
+	line-height:20px;
+}
+.grade{
+	color:#006666;
+}
+
+
+/*右侧部分*/
+#right{
+	width:700px;
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+

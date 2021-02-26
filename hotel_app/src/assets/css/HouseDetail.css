@@ -1,0 +1,416 @@
+
+
+.clear{clear:both;}
+
+
+/*中间整体部分*/
+#middle{
+	width:960px;
+	height:auto;
+}
+
+/*房屋名称*/
+.housetitle{
+	width:940px;
+	height:30px;
+	line-height:30px;
+	color:#006666;
+	font-size:16px;
+	font-weight:bold;
+	margin:0 0 10px 0;
+	padding:0 0 0 20px;
+}
+
+/*中间左侧部分*/
+.middle-left{
+	width:650px;
+	height:auto;
+	float:left;
+	margin:0 10px 0 0;
+}
+
+/*焦点图部分选项卡*/
+.focus{
+	width:650px;
+	height:400px;
+	margin:0 0 20px 0;
+}
+
+/*选项卡*/
+OL LI { MARGIN: 20px }
+
+/*整个选项卡*/
+#con { 
+	WIDTH:650px;
+}
+
+/*选项卡标题*/
+#tags { 
+	WIDTH: 650px; 
+	HEIGHT: 30px;
+}
+#tags LI { 
+	BACKGROUND:url(../House/images/tabfocus2.jpg) no-repeat left bottom; 
+	FLOAT: left; 
+	LIST-STYLE-TYPE: none; 
+	HEIGHT: 30px;
+	width:100px; 
+	font-size:14px;
+	margin:0 10px 0 0;
+}
+#tags LI A {
+	FLOAT: left;
+	COLOR:#FFFFFF;
+ 	LINE-HEIGHT: 30px;
+	HEIGHT: 30px; 
+	width:100px;
+	TEXT-DECORATION: none;
+	text-align:center; 
+}
+
+
+#tags LI.selectTag { 
+	MARGIN-BOTTOM: -2px;
+	HEIGHT: 30px; 
+}
+#tags LI.selectTag A {
+	font-weight:bold;
+	LINE-HEIGHT: 30px;
+	HEIGHT: 30px;
+	width:100px;
+	text-align:center;
+	background:url(../House/images/tabfocus1.jpg) no-repeat;
+}
+
+/*选项卡下面的内容*/
+#tagContent {  
+	BORDER-TOP:2px solid #33847D;
+	PADDING-TOP: 1px;
+	BACKGROUND-COLOR: #fff; 
+}
+.tagContent {  
+	width:650px;
+	DISPLAY: none;
+	PADDING-BOTTOM: 10px; 
+	WIDTH: 650px; 
+	COLOR: #474747; 
+	PADDING-TOP: 10px; 
+	HEIGHT:auto;
+}
+#tagContent DIV.selectTag {
+	DISPLAY: block;
+}
+
+/*文字介绍*/
+.textinfo{
+	line-height:20px;
+}
+
+/*基本信息*/
+.basicInfo{
+	width:320px;
+	float:left;
+	margin:20px 20px 0 0;
+}
+.basicInfo table{
+	border:1px solid #e7e7e7;
+	width:310px;
+}
+.tdborder{
+	border-bottom:1px dashed #e7e7e7;
+}
+.tabtitle{
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image:url(../House/images/tabtitle.jpg);
+}
+.basicInfo span{
+	margin:0 0 0 10px;
+}
+
+/*服务信息*/
+.serviceinfo{
+	width:310px;
+	float:right;
+	margin:20px 0 0 0;
+	height:auto;
+}
+.service{
+	width:280px;
+	height:auto;
+	border:1px solid #e7e7e7;
+	margin:0 0 10px 0;
+	background-color:#F5F5F5;
+	padding:10px;
+	height:70px;
+}
+.servicetitle{
+	color:#006666;
+	font-weight:bold;
+}
+.service ul li{
+	float:left;
+	margin:0 20px 0 0;
+}
+
+/*位置及周边，地图*/
+.map{
+	width:650;
+	height:400px;
+	margin:0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+/*房屋评价、其他房屋评价选项卡开始*/
+/*选项卡开始*/
+.nTab{
+	width: 650px;
+	margin:20px 0 0 0;
+	margin-bottom:2px;
+}
+/*选项卡标题*/
+.nTab .TabTitle{
+	clear: both;
+	height: 30px;
+	overflow: hidden;
+}
+.nTab .TabTitle ul{
+	margin:0;
+	padding:0;
+}
+.nTab .TabTitle li{
+	float: left;
+	width: 100px;
+	height:30px;
+	cursor: pointer;
+	list-style-type: none;
+	margin:0 10px 0 0;
+	display:block;
+	line-height:30px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:14px;
+}
+.nTab .TabTitle .active{ 
+	width:100px;
+	height:30px;
+	font-weight:bold;
+	background:url(../House/images/tabfocus1.jpg) no-repeat;
+	
+}
+.nTab .TabTitle .normal{ 
+	background:url(../House/images/tabfocus2.jpg) no-repeat;
+}
+
+/*选项卡内容*/
+.nTab .TabContent{
+	BORDER-TOP:2px solid #33847D;
+	width:630px;
+	background:#fff;
+	padding:10px;
+	background-color:#F5F5F5;
+}
+.none {display:none;}
+
+/*第一个标签的内容，房屋评价*/
+.commetncnt{
+	margin:0 10px 0 10px;
+	width:auto;
+	padding:10px;
+	background-color:#FFFFFF;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-webkit-box-shadow:5px 5px 7px #999;
+}
+/*管理员回复*/
+
+.reply{
+	margin:0 10px 0 10px;
+	float:right;
+	padding:10px;
+	background-color:#4BCDC0;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-webkit-box-shadow:5px 5px 7px #999;
+	-moz-box-shadow:5px 5px 7px #999;
+	box-shadow:5px 5px 7px #999;
+}
+/*分页*/
+.page{
+	margin:10px 0 0 0;
+	width:auto;
+	height:20px;
+}
+.page a{
+	float:left;
+	width:40px;
+	height:20px;
+	line-height:20px;
+	margin:0 10px 0 0;
+	display:block;
+	text-align:center;
+	color:#006666;
+	background:url(../House/images/pre.jpg) no-repeat;
+}
+.page a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*中间右侧部分*/
+.middle-right{
+	width:300px;
+	height:auto;
+	float:right;
+}
+/*预订房间、客服*/
+.reservation{
+	width:260;
+	padding:10px 20px;
+}
+.price{
+	float:right;
+	margin:0 0 20px 0;
+}
+.price label{
+	font-size:16px;
+	font-weight:bold;
+	color:#006666;
+}
+.date{
+	width:260px;
+	height:40px;
+	margin:0 0 20px 0;
+	line-height:40px;
+	background-image:url(../House/images/timebg.jpg);
+}
+.date span{
+	width:80px;
+	color:#006666;
+	font-size:14px;
+	margin:0 0 0 15px;
+	float:left;
+}
+/*合计*/
+.totalprice label{
+	font-weight:bold;
+	color:#006666;
+}
+.totalprice{
+	width:240px;
+	height:auto;
+	padding:10px;
+	background-color:#F6F6F6;
+	margin:0 0 10px 0;
+}
+#bookbtn,#cusserbtn{
+	width:260px;
+	height:30px;
+	color:#FFFFFF;
+	font-size:14px;
+	text-align:center;
+	line-height:30px;
+	display:block;
+	background:url(../House/images/reservationbtn.jpg) no-repeat;
+	margin:0 0 20px 0;
+}
+
+/*客服*/
+
+.servicecase{
+	width:240px;
+	height:auto;
+	padding:10px;
+	background-color:#F6F6F6;
+	margin:10px 0 0 0;
+}
+.servicecase label{
+	font-weight:bold;
+	color:#006666;
+}
+
+/*该公司的其他房源*/
+.CompanyOtherList{
+	width:278px;
+	height:300px;
+	padding:10px;
+	margin:20px 0 0 0;
+	border:1px solid #e7e7e7;
+}
+.CompanyOtherList a{
+	color:blue;
+}
+.CompanyOtherList a:hover{
+	text-decoration:underline;
+}
+.CompanyOtherList h4{
+	float:left;
+	color:#006666;
+	margin:0 0 10px 0;
+}
+.readall{
+	float:right;
+	margin:0 20px 0 0;
+}
+.OtherList{
+	margin:10px 0 0 0;
+}
+.OtherList img{
+	float:left;
+}
+.OtherListname{
+	width:160px;
+	margin:0 0 0 10px;
+	float:right;
+}
+
+/*附近房源*/
+.NearbyList{
+	width:278px;
+	height:300px;
+	padding:10px;
+	border:1px solid #e7e7e7;
+}
+.NearbyList h4{
+	float:left;
+	color:#006666;
+	margin:0 0 10px 0;
+}
+.NearbyList a{
+	color:blue;
+}
+.NearbyList a:hover{
+	text-decoration:underline;
+}
+
+/*为什么选择天堂鸟*/
+.whychoose{
+	width:278px;
+	height:230px;
+	padding:10px;
+	background-color:#F6F6F6;
+	margin:10px 0 0 0;
+}
+.whychoose h4{
+	color:#006666;
+	margin:0 0 10px 0;
+}
+
+
+
+

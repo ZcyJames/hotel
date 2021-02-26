@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+
+    <!-- IOC配置 扫描IOC的Controller层-->
+    <context:component-scan base-package="com.xyh.hotel_api.controller"/>
+
+    <!-- 避免IE等特殊浏览器 ajax访问后端  返回json文件
+    控制器异步交互 return 直接返回json数据-->
+    <bean id="mappingJacksonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--开启注解驱动 -->
+    <mvc:annotation-driven/>
+
+    <!--静态资源拦截 -->
+    <mvc:default-servlet-handler/>
+
+    <!-- 启动SpringMVC的注解功能，完成请求和注解POJO的映射 -->
+    <bean
+            class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="mappingJacksonHttpMessageConverter"/>
+                <!-- pojo实体类  自动转换成json数据-->
+            </list>
+        </property>
+    </bean>
+
+    <!--定义跳转的文件的前后缀  ，视图模式配置-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--设置全局跳转  返回页面前 拼接url路径的前缀与后缀 -->
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!-- 配置文件上传  每个Spring框架都进行标准化配置-->
+    <bean  id="multipartResolver"
+           class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 默认IO流传输 编码集 中文化-->
+        <property name="defaultEncoding" value="utf-8"/>
+        <!--文件大小 最大值 -->
+        <property name="maxUploadSize"  value="10485760000"/>
+        <!--内存中的最大值 -->
+        <property name="maxInMemorySize" value="40960" />
+    </bean>
+
+    <!--后端异常类 错误处理包链接配置 -->
+    <bean id="customExceptionAdvice" class="com.xyh.hotel_api.exception.CustomExceptionAdvice"/>
+</beans>

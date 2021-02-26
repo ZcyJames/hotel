@@ -1,0 +1,445 @@
+
+/*焦点图*/
+#focus{
+	width:960px;
+	height:400px;
+}
+
+#inner { 
+	width: 960px; 
+	margin: 0 auto; 
+}
+.hot-event { 
+	padding: 350px 0 0; 
+	position: relative;
+}
+.hot-event .switch-tab { 
+	text-align: center; 
+	padding: 10px 0; 
+}
+.hot-event .switch-tab a, .hot-event .switch-tab .current { 
+	margin: 0 2px; 
+	display: inline-block; 
+	width: 15px; 
+	height: 15px; 
+	background-image:url(../Images/focus/bg.png);
+	background-position: -161px 0; 
+	font: 0/0 arial; 
+	color: transparent; 
+	overflow: hidden; 
+	vertical-align: top; 
+}
+.hot-event .switch-tab .current { 
+	background-image: url(../Images/focus/bg.png);
+	background-position: -195px 0; 
+}
+.hot-event .switch-nav { 
+	position: absolute; 
+	right: 10px; 
+	top: 310px; 
+	z-index: 2; 
+}
+
+.hot-event .switch-nav .i-prev { 
+	background-image:url(../Images/focus/bg.png); 
+	background-position: -127px 0; 
+}
+.hot-event .switch-nav .prev { 
+	border-radius: 3px 0 0 3px; 
+	border-width: 1px; 
+}
+.hot-event .switch-nav .next { 
+	border-radius: 0 3px 3px 0; 
+	border-width: 1px 1px 1px 0; 
+}
+.hot-event .switch-nav .i-next { 
+	background-image:url(../Images/focus/bg.png);
+	background-position: -144px 0; 
+}
+.hot-event .switch-nav a { 
+	display: inline-block; 
+	padding: 7px 16px; 
+	background: rgba(0,0,0,.3); 
+	border-style: solid; 
+	border-color: rgba(255,255,255,.6); 
+}
+.hot-event .switch-nav a:hover { 
+	background: rgba(0,0,0,.2); 
+}
+.hot-event .event-item { 
+	height: 350px; 
+	width: 960px; 
+	position: absolute; 
+	z-index: 1; 
+	left: 0; 
+	top: 0; 
+}
+.hot-event .event-item .banner { 
+	display: block; 
+}
+.hot-event .event-item img { 
+	-webkit-box-reflect: below 0 -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(85%,transparent),to(rgba(255,255,255,.2))); 			
+	border: 0; 
+}
+.hide-clip { 
+	position: absolute!important; 
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px,1px,1px,1px); 
+	padding: 0!important; 
+	border: 0!important; 
+	height: 1px!important; 
+	line-height: 0!important; 
+	width: 1px!important; 
+	overflow: hidden; 
+}
+a { 
+	color: #4385a7; 
+}
+a { 
+	text-decoration: none; 
+}
+a .ico { 
+	cursor: pointer; 
+}
+.ico { 
+	display: inline-block; 
+	width: 16px; 
+	height: 16px; 
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+
+
+
+
+/*焦点图右侧，登录、注册、、、*/
+
+.link{
+	width:480px;
+	height:30px;
+	float:right;
+	position: absolute; 
+	right: 5px; 
+	top: 10px; 
+	z-index: 2; 
+}
+.link a{
+	float:right;
+	text-decoration:none;
+	color:#FFFFFF;
+	display:block;
+	width:80px;
+	height:30px;
+	background:url(../Images/linkbtn.jpg) no-repeat;
+	margin:0 5px 0 0;
+	text-align:center;
+	line-height:30px;
+}
+.link a:hover{
+	background:url(../Images/linkbtnbg.jpg) no-repeat;
+}
+.link span{
+	line-height:30px;
+	float:right;
+}
+.username a{
+	background:none;
+	color:blue;
+}
+.username a:hover{
+	background:none;
+	text-decoration:underline;
+}
+/*浮动在焦点图上的搜索*/
+.searching{
+	width:360px;
+	height:200px;
+	margin:0 0 0 20px;
+	position: absolute; 
+	right: 300px; 
+	top: 100px; 
+	z-index: 2; 
+}
+.q1{
+	color:#006666;
+	text-align:center;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	display:block;
+	background:url(../Images/destination.png) no-repeat;
+}
+.textbg{
+	width:190px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background-image:url(../Images/textbg.png);
+}
+.nubroom a{
+	float:left;
+	color:#006666;
+	text-decoration:none;
+	width:48px;
+	height:30px;
+	display:block;
+	line-height:30px;
+	text-align:center;
+}
+.nubroom1{
+	background:url(../Images/nubroom1.png) no-repeat;
+}
+
+.nubroom2{
+	background:url(../Images/nubroom2.png) no-repeat;
+}
+.nubroom3{
+	background:url(../Images/nubroom3.png) no-repeat;
+}
+.nubroom4{
+	background:url(../Images/nubroom4.png) no-repeat;
+}
+.nubroom1:hover{
+	color:#FFFFFF;
+	background:url(../Images/nubroom1bg.png) no-repeat;
+}
+.nubroom2:hover{
+	color:#FFFFFF;
+	background:url(../Images/nubroom2bg.png) no-repeat;
+}
+.nubroom3:hover{
+	color:#FFFFFF;
+	background:url(../Images/nubroom3bg.png) no-repeat;
+}
+.nubroom4:hover{
+	color:#FFFFFF;
+	background:url(../Images/nubroom4bg.png) no-repeat;
+}
+
+
+/*立即搜索按钮*/
+#btn{
+	text-decoration:none;
+	color:#FFFFFF;
+	text-align:center;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	display:block;
+	background:url(../Images/searchnowbtn.png) no-repeat;
+}
+
+
+
+
+
+/*热门城市*/
+#hotcity{
+	width:958px;
+	height:448px;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	margin:20px 0 0 0;
+}
+.title{
+	width:958px;
+	height:30px;
+	background:url(../Images/titlebg.jpg) no-repeat;
+}
+.titlename1{
+	color:#FFFFFF;
+	display:block;
+	/*width:918px;
+	height:30px;*/
+	line-height:30px;
+	padding:0 0 0 40px;/*
+	background:url(../Images/titlebg.jpg) no-repeat;*/
+}
+
+/*热门城市左侧,地图部分*/
+.hotcityleft{
+	width:470px;
+	height:420px;
+	float:left;
+}
+/*地图*/
+.map{
+	width:470px;
+	height:380px;
+}
+/*地图下面，top城市*/
+.Topcity{
+	width:430px;
+	height:40px;
+	padding:0 0 0 20px;
+}
+.topct{
+	font-size:14px;
+	font-weight:bold;
+}
+.Topcity a{
+	color:blue;
+	text-decoration:none;
+	line-height:40px;
+}
+.Topcity a:hover{
+	text-decoration:underline;
+}
+/*地图右侧，城市的详情*/
+.citydetial{
+	width:426px;
+	height:377px;
+	float:right;
+	border:1px solid #CCCCCC;
+	margin:10px 10px 10px 0;
+	padding:10px;
+}
+/*地图右侧，城市图片*/
+.citydetialimg{
+	width:150px;
+	height:100px;
+	margin:0 10px 20px 0;
+	float:left;
+}
+/*地图右侧，城市简介*/
+.textdetail{
+	width:266px;
+	height:100px;
+	float:right;
+	margin:0 0 20px 0;
+}
+.cityname{
+	color:#FF0000;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+}
+.readdetail{
+	color:blue;
+	text-decoration:none;
+}
+.textdetail a:hover{
+	text-decoration:underline;
+}
+.textdetail p{
+	line-height:20px;
+}
+
+/*城市著名景点*/
+.attraction{
+	width:426px;
+	height:30px;
+}
+.attraction a{
+	float:left;
+	color:#000000;
+	text-decoration:none;
+	text-align:center;
+	line-height:30px;
+	width:60px;
+	height:30px;
+	margin:0 5px 0 0;
+	display:block;
+	background-color:#CCCCCC;
+}
+.attraction a:hover{
+	text-decoration:underline;
+}
+
+.clear{clear:both;}
+
+
+/*房屋关注率排行*/
+.attentionrate{
+	width:426px;
+	height:200px;
+	margin:20px 0 0 0;
+}
+.textatnrate{
+	font-size:14px;
+}
+.attentionrate a{
+	color:blue;
+	text-decoration:none;
+}
+.attentionrate a:hover{
+	text-decoration:underline;
+}
+
+/*特色推荐*/
+#recommend{
+	width:960px;
+	height:200px;
+	margin:20px 0 0 0;
+}
+.titlename2{
+	color:#FFFFFF;
+	display:block;
+	line-height:30px;
+	padding:0 0 0 40px;
+}
+.rmdcity{
+	height:160px;
+	width:960px;
+	margin:10px 0 0 0;
+	float:left;
+}
+.rightpitch{
+	margin:0 5px 0 0;
+}
+
+/*广告语*/
+#slogan{
+	width:958px;
+	height:118px;
+	border:1px solid #CCCCCC;
+	margin:20px 0 0 0;
+}
+
+.slogan1{
+	width:238px;
+	height:78px;
+	float:left;
+	border-right:1px solid #CCCCCC;
+	margin:30px 0 10px 0;
+}
+#slogan2{
+	width:238px;
+	height:78px;
+	float:left;
+	margin:30px 0 10px 0;
+}
+.sloganimg{
+	width:40px;
+	height:78px;
+	float:left;
+	margin:0 0 0 20px;
+}
+.textslogan{
+	width:150px;
+	height:78px;
+	float:right;
+	margin:0 10px 0 0;
+}
+.textslogan a{
+	color:gray;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.textslogan a:hover{
+	text-decoration:underline;
+}
+.textslogan p{
+	color:#999999;
+	line-height:20px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<title>天堂鸟-支付订金</title>
+<link href="../css/Payment.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/head.css" rel="stylesheet"  type="text/css"/>
+<link href="../css/common/foot.css" rel="stylesheet"  type="text/css"/>
+<link href="../css/common/neck.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../public/js/head.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--top 整个头部-->
+		<div id="nav">
+	  <!--logo-->
+	  <div class="logo"> <img src="../Common/images/logo.png" width="120" height="80" border="0"/> </div>
+	  <!--导航-->
+	  <ul id="navMenu">
+		<li><a href="#" rel='dropmenu1'>国内目的地</a></li>
+		<li><a href="#" rel='dropmenu2'>主题推荐</a></li>
+		<li><a href="#" rel='dropmenu3'>出游类型</a></li>
+		<li><a href="#" rel='dropmenu4'>旅游指南</a></li>
+	  </ul>
+	  <div class="attention"> 
+	  	<a href="#" class="atnimg"><img src="../Common/images/attention.jpg" width="70" height="25" border="0"/></a> 
+	  </div>
+	  <!--手动搜索-->
+	  <div class="search" valign="middle">
+		
+	  	<!--下拉框-->
+		<div class="selectBox">
+			<select id="criteriaSelect" name="destinationId" style="border:0;width:95px;height:20px;filter:alpha(opacity=30);opacity:0.2;background: none transparent scroll repeat 0% 0%;color:#000000;" >
+            <option  value="8" name="qingdao" data-show="True">青岛</option>
+            <option selected="selected" value="48" name="beijing" data-show="True">北京</option>
+            <option  value="1" name="sanya" data-show="True">三亚</option>
+            <option  value="23" name="shanghai" data-show="True">上海</option>
+            <option  value="10" name="chengdu" data-show="True">成都</option>
+            <option  value="7" name="hangzhou" data-show="True">杭州</option>
+            <option  value="18" name="dalian" data-show="True">大连</option>
+            <option  value="45" name="guangzhou" data-show="True">广州</option>
+            <option  value="49" name="shenzhen" data-show="True">深圳</option>
+            <option  value="9" name="nanjing" data-show="True">南京</option>
+            <option  value="33" name="xiamen" data-show="True">厦门</option>
+            <option  value="30" name="weihai" data-show="True">威海</option>
+            <option  value="396" name="xianggang" data-show="True">香港</option>
+            <option  value="32" name="guilin" data-show="True">桂林</option>
+            <option  value="17" name="xian" data-show="True">西安</option>
+            <option  value="37" name="pingyao" data-show="True">平遥</option>
+            <option  value="22" name="chongqing" data-show="True">重庆</option>
+            <option  value="36" name="dali" data-show="True">大理</option>
+            <option  value="31" name="kunming" data-show="True">昆明</option>
+            <option  value="11" name="suzhou" data-show="True">苏州</option>
+            <option  value="12" name="lijiang" data-show="True">丽江</option>
+            <option  value="19" name="jinan" data-show="True">济南</option>
+            <option  value="44" name="yantai" data-show="True">烟台</option>
+            <option  value="28" name="xitang" data-show="True">西塘</option>
+            <option  value="67" name="qiandaohu" data-show="True">千岛湖</option>
+            <option  value="6" name="huangshan" data-show="True">黄山</option>
+            <option  value="14" name="wuxi" data-show="True">无锡</option>
+            <option  value="16" name="ningbo" data-show="True">宁波</option>
+            <option  value="15" name="jiuzhaigou" data-show="True">九寨沟</option>
+            <option  value="29" name="penglai" data-show="True">蓬莱</option>
+            <option  value="126" name="shenyang" data-show="True">沈阳</option>
+            <option  value="35" name="yingkou" data-show="True">营口</option>
+            <option  value="55" name="wuhan" data-show="True">武汉</option>
+            <option  value="5" name="lingshui" data-show="True">陵水(三亚)</option>
+            <option  value="13" name="zhouzhuang" data-show="True">周庄</option>
+            <option  value="20" name="zhoushan" data-show="True">舟山</option>
+            <option  value="4" name="wenchang" data-show="True">文昌</option>
+            <option  value="21" name="changzhou" data-show="True">常州</option>
+            <option  value="25" name="yanan" data-show="True">延安</option>
+            <option  value="27" name="zhenjiang" data-show="True">镇江</option>
+            <option  value="26" name="yangzhou" data-show="True">扬州</option>
+            <option  value="38" name="zaozhuang" data-show="True">枣庄</option>
+            <option  value="34" name="xuyi" data-show="True">盱眙</option>
+            <option  value="2" name="boao" data-show="True">博鳌(琼海)</option>
+            <option  value="42" name="lushan" data-show="True">庐山</option>
+            <option  value="46" name="kunshan" data-show="True">昆山</option>
+            <option  value="50" name="hefei" data-show="True">合肥</option>
+            <option  value="3" name="wuzhishan" data-show="True">五指山</option>
+            <option  value="51" name="zhuhai" data-show="True">珠海</option>
+            <option  value="52" name="nantong" data-show="True">南通</option>
+            <option  value="54" name="yancheng" data-show="True">盐城</option>
+            <option  value="56" name="tengchong" data-show="True">腾冲</option>
+            <option  value="59" name="wuyuan" data-show="True">婺源</option>
+            <option  value="47" name="qixia" data-show="True">栖霞(烟台)</option>
+            <option  value="40" name="emeishan" data-show="True">峨眉山</option>
+            <option  value="39" name="lianyungang" data-show="True">连云港</option>
+            <option  value="58" name="xishuangbanna" data-show="True">西双版纳</option>
+            <option  value="62" name="wuyishan" data-show="True">武夷山</option>
+            <option  value="63" name="changsha" data-show="True">长沙</option>
+            <option  value="64" name="haerbin" data-show="True">哈尔滨</option>
+            <option  value="57" name="xianggelila" data-show="True">香格里拉</option>
+            <option  value="65" name="qinhuangdao" data-show="True">秦皇岛</option>
+            <option  value="60" name="zhangjiakou" data-show="True">张家口</option>
+            <option  value="66" name="tianjin" data-show="True">天津</option>
+            <option  value="68" name="foshan" data-show="True">佛山</option>
+          </select>
+		</div>	
+		
+		 <input name="text" type="text" class="searcText" style="border:0;background: none transparent scroll repeat 0% 0%;width:130px;height:20px;margin:10px 0 0 2px;float:left;"/>
+		 <div class="searcher">
+		 	<a href="#"><img src="../Common/images/searcher.jpg" width="20" height="20" border="0"/></a>
+		 </div>
+	  </div>
+	</div>
+	
+	<!--导航下拉菜单-->
+		<div id="dropmenu1" class="dropMenu">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="80" class="tdborder">
+					<span class="province">直辖市</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">北京</a></li>
+						<li><a href="#">上海</a></li>
+						<li><a href="#">天津</a></li>
+						<li><a href="#">重庆</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">港澳台</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">香港</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">海南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="../House/CityHouse.html">三亚</a></li>
+						<li><a href="#">博鳌(琼海)</a></li>
+						<li><a href="#">文章</a></li>
+						<li><a href="#">五指山</a></li>
+						<li><a href="#">陵水（三亚）</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">西南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">桂林</a></li>
+						<li><a href="#">大理</a></li>
+						<li><a href="#">丽江</a></li>
+						<li><a href="#">昆明</a></li>
+						<li><a href="#">腾冲</a></li>
+						<li><a href="#">西双版纳</a></li>
+						<li><a href="#">香格里拉</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">山东</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">青岛</a></li>
+						<li><a href="#">威海</a></li>
+						<li><a href="#">烟台</a></li>
+						<li><a href="#">蓬莱</a></li>
+						<li><a href="#">济南</a></li>
+						<li><a href="#">栖霞（烟台）</a></li>
+						<li><a href="#">枣庄</a></li>
+						<li><a href="#">泰安</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">江苏</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">南京</a></li>
+						<li><a href="#">无锡</a></li>
+						<li><a href="#">苏州</a></li>
+						<li><a href="#">南通</a></li>
+						<li><a href="#">扬州</a></li>
+						<li><a href="#">镇江</a></li>
+						<li><a href="#">盱眙</a></li>
+						<li><a href="#">周庄</a></li>
+						<li><a href="#">常州</a></li>
+						<li><a href="#">昆山</a></li>
+						<li><a href="#">连云港</a></li>
+						<li><a href="#">盐城</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">浙江</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">杭州</a></li>
+						<li><a href="#">千岛湖</a></li>
+						<li><a href="#">宁波</a></li>
+						<li><a href="#">舟山</a></li>
+						<li><a href="#">西塘</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">四川</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">成都</a></li>
+						<li><a href="#">九寨沟</a></li>
+						<li><a href="#">峨眉山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">广东</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">广州</a></li>
+						<li><a href="#">深圳</a></li>
+						<li><a href="#">珠海</a></li>
+						<li><a href="#">佛山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">山陕</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">西安</a></li>
+						<li><a href="#">延安</a></li>
+						<li><a href="#">平遥</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">东北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">大连</a></li>
+						<li><a href="#">营口</a></li>
+						<li><a href="#">哈尔滨</a></li>
+						<li><a href="#">沈阳</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">安徽</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">合肥</a></li>
+						<li><a href="#">黄山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">福建</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">福州</a></li>
+						<li><a href="#">厦门</a></li>
+						<li><a href="#">武夷山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">江西</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">南昌</a></li>
+						<li><a href="#">庐山</a></li>
+						<li><a href="#">婺源</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">湖南湖北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">武汉</a></li>
+						<li><a href="#">长沙</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">河南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">郑州汉</a></li>
+						<li><a href="#">洛阳</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">河北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">承德</a></li>
+						<li><a href="#">秦皇岛</a></li>
+						<li><a href="#">张家口</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">西北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">兰州</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">内蒙古</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">呼伦贝尔</a></li>
+						<li><a href="#">满洲里</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+		<ul id="dropmenu2" class="dropMenu">
+			<li><a href="#">相约海岛</a></li>
+			<li><a href="#">海滨漫步</a></li>
+			<li><a href="#">休闲时光</a></li>
+			<li><a href="#">极致体验</a></li>
+			<li><a href="#">赏花踏青</a></li>
+		</ul>
+		<ul id="dropmenu3" class="dropMenu">
+			<li><a href="#">浪漫之旅</a></li>
+			<li><a href="#">家庭出游</a></li>
+			<li><a href="#">朋友聚会</a></li>
+		</ul>
+		
+		
+		<script type="text/javascript">cssdropdown.startchrome("navMenu")</script> 
+	<!--top 头部结束-->
+	
+	<!--颈部-->
+	<div id="neck">
+		<!--登录注册行-->
+		<div class="link">
+			<a href="#">手机客户端</a>
+			<a href="#">在线客服</a>
+			<a href="../UserInfo/OrderList.html">我的天堂鸟</a>
+			<a href="../Home.html">退出</a>
+			<div class="username">
+				<a href="../UserInfo/OrderList.html">187****9013</a>
+				<span>您好，</span>
+			</div>
+		</div>
+		
+		
+	</div>
+	<!--颈部结束-->
+	
+	<div class="clear"></div>
+
+	<!--填写预定信息、支付定金、入住并点评-->
+	<div id="Tradingstep">
+		<ul>
+			<li class="fillin">填写预定信息</li>
+			<li class="payment">支付定金</li>
+			<li class="checkincmt">入住并点评</li>
+		</ul>
+	</div>
+	
+	<!--用户提示语-->
+	<div class="usertips">
+		<p>1.尊敬的用户，您的订单已生成，订单号：<label>MN67553</label>，订单信息已经发送到您的手机。</p>
+		<p>2.房屋为您保留<label>45分钟</label>,请再次之前完成支付，如需修改订单内容，请致电天堂鸟客服0510-85176789。</p>
+		<p>3.如无特殊情况将按您的订单要求进行后续操作，确认信息届时将发送至您的联系人手机中。</p>
+		<p>4.订单以公寓管理公司确认为准，如订单未能确认，我们会及时与您联系。</p>
+	</div>
+	<!--用户提示语结束-->
+	
+	<!--订单详情-->
+	<div class="orderdetail">
+		<!--订单号、订单状态-->
+		<div class="ordernubline">
+			<span class="ordernub">订单号：<label>MN67553</label></span>
+			<span class="orderstauts"><input type="button" id="refresh" value="刷新" />订单状态：<label>等待支付定金</label>
+				
+			</span>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<!--订单内容-->
+		<div class="ordercontent">
+			<table>
+				<tr>
+					<td width="80">
+						<span>房屋名称：</span>
+					</td>
+					<td width="350">
+						<label class="fontblod">亚龙湾公主郡清爽亦然双阳台度假房</label>
+					</td>
+					<td width="80">
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>订单原价：</span>
+					</td>
+					<td>
+						<span>￥930</span>
+					</td>
+					<td>
+						<span>下单时间：</span>
+					</td>
+					<td>
+						<span>2020-08-07 10:43</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>订单现价：</span>
+					</td>
+					<td>
+						<span>￥930.00</span>
+					</td>
+					<td>
+						<span>入住时间：</span>
+					</td>
+					<td>
+						<span>2020-08-08</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>订金：</span>
+					</td>
+					<td>
+						<span>￥230.00</span>
+					</td>
+					<td>
+						<span>退房时间：</span>
+					</td>
+					<td>
+						<span>2020-08-11</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>待付款：</span>
+					</td>
+					<td>
+						<span class="fontblod">￥230</span>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+	<!--订单详情结束-->
+	
+	<!--积分使用-->
+	<div class="pointpay">
+		<table>
+				<tr>
+					<td width="80">
+						<span>待付款：</span>
+					</td>
+					<td width="350">
+						<span>￥230</span>
+					</td>
+					<td width="80">
+						<span>抵扣：</span>
+					</td>
+					<td>
+						<span>￥<label>0.00</label></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>使用积分：</span>
+					</td>
+					<td>
+						<span><input type="text" id="pointusetxt" /><label class="unit">分</label> <input type="button" id="pointusebtn" value="使用" /></span>
+					</td>
+					<td>
+						<span>可用积分：</span>
+					</td>
+					<td>
+						<span><label class="fontblod">500</label>分</span>
+					</td>
+				</tr>
+				
+			</table>
+	</div>
+	<!--积分使用结束-->
+	
+	<!--网银支付-->
+	<div class="onlinebankpay">
+		<div class="bankpaytitle">
+			<span>网银支付</span>
+		</div>
+		
+		<!--银行-->
+		<div class="bank">
+			<table>
+				<tr height="50">
+					<td width="20">
+						<input type="radio" checked="checked" class="radiobtn" value="" id="bank1" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/01zhonghang.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank2" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/02nonghang.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank3" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/03youzheng.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank4" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/04jianhang.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank5" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/05gonghang.png" width="115" height="35" border="0" />
+					</td>
+				</tr>
+				<tr height="50">
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank6" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/06jiaohang.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank7" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/07zhaohang.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank8" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/08minsheng.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank9" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/09zhongxing.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank10" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/10pufa.png" width="115" height="35" border="0" />
+					</td>
+				</tr>
+				<tr height="50">
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank11" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/11pingan.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank12" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/12xingye.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank13" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/13guangda.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank14" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/14ningbo.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank15" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/15guangdongfazhan.png" width="115" height="35" border="0" />
+					</td>
+				</tr>
+				<tr height="50">
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank16" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/16fazhan.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank17" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/17beijing.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank18" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/18fushen.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank19" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/19hangzhou.png" width="115" height="35" border="0" />
+					</td>
+					<td width="20">
+					</td>
+					<td width="164">
+					</td>
+				</tr>
+				<tr height="50">
+					<td colspan="10">
+						<span>合作网银：</span>
+					</td>
+				</tr>
+				<tr height="50">
+					<td width="20">
+						<input type="radio" class="radiobtn" value="" id="bank19" name="1" />
+					</td>
+					<td width="164">
+						<img src="images/bank/zhifubao.png" width="115" height="35" border="0" />
+					</td>
+					<td colspan="8">
+					</td>
+				</tr>
+				<tr height="50">
+					<td colspan="10" align="center">
+						<input type="button" id="impaybtn" value="立即支付" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+	<!--网银支付结束-->
+	
+	<!--交易规则-->
+	<div class="ruleInfo">
+		<div class="ruleinfotitle">
+			<span>交易规则</span>
+		</div>
+		<div class="rulecontnet">
+			<p>1.确认订单需预付0.00元作为定金。</p>
+			<p>2.需15:00之后办理住宿，早到可能需要等待。</p>
+			<p>3.房屋保留至07月19日18:00，如不能及时到达，请联系天堂鸟客服。</p>
+		</div>
+	</div>
+	<!--交易规则结束-->
+	
+	
+	
+	
+	
+	<div class="clear"></div>
+	
+	<!--foot-->
+	<div id="foot">
+			<a href="#">关于我们 |</a>
+			<a href="#">业务介绍 |</a>
+			<a href="#">加入天堂鸟 |</a>
+			<a href="#">帮助中心 |</a>
+			<a href="#">网站地图</a>
+			<p>@ Copyright 2020 tiantangniao.com 天堂鸟 版权所有 不得转载</p>
+			<p>京ICP备11043397号</p>
+	</div>
+	<!--foot结束-->
+
+
+</div>
+</body>
+</html>

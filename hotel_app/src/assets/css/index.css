@@ -1,0 +1,346 @@
+
+
+
+
+/*焦点图*/
+#focus{
+	width:960px;
+	height:350px;
+}
+.flash{
+	width:560px;
+	height:350px;
+	float:left;
+}
+
+/*焦点图右侧，登录、注册、、、*/
+
+.link{
+	width:400px;
+	height:30px;
+	float:right;
+}
+.link a{
+	float:right;
+	text-decoration:none;
+	color:#FFFFFF;
+	display:block;
+	width:80px;
+	height:30px;
+	background:url(../Images/linkbtn.jpg) no-repeat;
+	margin:0 5px 0 0;
+	text-align:center;
+	line-height:30px;
+}
+.link a:hover{
+	background:url(../Images/linkbtnbg.jpg) no-repeat;
+}
+.link span{
+	line-height:30px;
+	float:right;
+}
+.username a{
+	background:none;
+	color:blue;
+}
+.username a:hover{
+	background:none;
+	text-decoration:underline;
+}
+
+/*焦点图右侧，搜索*/
+.choosesearch{
+	width:378px;
+	height:298px;
+	float:right;
+	margin:20px 0 0 20px;
+	border:1px solid #CCCCCC;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-webkit-box-shadow:5px 5px 7px #999;
+	-moz-box-shadow:5px 5px 7px #999;
+}
+/*寻找住处*/
+.find{
+	width:378px;
+	height:40px;
+	text-align:center;
+}
+.findroom{
+	font-size:30px;
+	color:#006666;
+	line-height:40px;
+	text-shadow:3px 3px 5px #111;
+}
+
+
+
+
+/*搜索*/
+.searching{
+	width:358px;
+	height:200px;
+	margin:0 0 0 20px;
+}
+.q1{
+	color:#006666;
+	text-align:center;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	display:block;
+	background:url(../Images/destination.png) no-repeat;
+}
+
+.nubroom{
+	float:left;
+	color:#006666;
+	text-decoration:none;
+	width:50px;
+	height:30px;
+	display:block;
+	line-height:30px;
+	text-align:center;
+	background:url(../Images/nubroom1.png) no-repeat;
+}
+.nubroom:hover{
+	background:url(../Images/nubroom1bg.png) no-repeat;
+}
+.textbg{
+	width:190px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background-image:url(../Images/textbg.png);
+}
+
+/*立即搜索按钮*/
+.searchnow{
+	width:93px;
+	height:40px;
+	margin:5px 0 0 140px;
+}
+#btn{
+	text-decoration:none;
+	color:#FFFFFF;
+	text-align:center;
+	width:93px;
+	height:40px;
+	line-height:40px;
+	display:block;
+	background:url(../Images/searchnow.jpg) no-repeat;
+}
+
+
+/*热门城市*/
+#hotcity{
+	width:958px;
+	height:448px;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	margin:20px 0 0 0;
+}
+.title{
+	width:958px;
+	height:30px;
+	background:url(../Images/titlebg.jpg) no-repeat;
+}
+.titlename1{
+	color:#FFFFFF;
+	display:block;
+	/*width:918px;
+	height:30px;*/
+	line-height:30px;
+	padding:0 0 0 40px;/*
+	background:url(../Images/titlebg.jpg) no-repeat;*/
+}
+
+/*热门城市左侧,地图部分*/
+.hotcityleft{
+	width:470px;
+	height:420px;
+	float:left;
+}
+/*地图*/
+.map{
+	width:470px;
+	height:380px;
+}
+/*地图下面，top城市*/
+.Topcity{
+	width:430px;
+	height:40px;
+	padding:0 0 0 20px;
+}
+.topct{
+	font-size:14px;
+	font-weight:bold;
+}
+.Topcity a{
+	color:blue;
+	text-decoration:none;
+	line-height:40px;
+}
+.Topcity a:hover{
+	text-decoration:underline;
+}
+/*地图右侧，城市的详情*/
+.citydetial{
+	width:426px;
+	height:377px;
+	float:right;
+	border:1px solid #CCCCCC;
+	margin:10px 10px 10px 0;
+	padding:10px;
+}
+/*地图右侧，城市图片*/
+.citydetialimg{
+	width:150px;
+	height:100px;
+	margin:0 10px 20px 0;
+	float:left;
+}
+/*地图右侧，城市简介*/
+.textdetail{
+	width:266px;
+	height:100px;
+	float:right;
+	margin:0 0 20px 0;
+}
+.cityname{
+	color:#FF0000;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+}
+.readdetail{
+	color:blue;
+	text-decoration:none;
+}
+.textdetail a:hover{
+	text-decoration:underline;
+}
+.textdetail p{
+	line-height:20px;
+}
+
+/*城市著名景点*/
+.attraction{
+	width:426px;
+	height:30px;
+}
+.attraction a{
+	float:left;
+	color:#000000;
+	text-decoration:none;
+	text-align:center;
+	line-height:30px;
+	width:60px;
+	height:30px;
+	margin:0 5px 0 0;
+	display:block;
+	background-color:#CCCCCC;
+}
+.attraction a:hover{
+	text-decoration:underline;
+}
+
+.clear{clear:both;}
+
+
+/*房屋关注率排行*/
+.attentionrate{
+	width:426px;
+	height:200px;
+	margin:20px 0 0 0;
+}
+.textatnrate{
+	font-size:14px;
+}
+.attentionrate a{
+	color:blue;
+	text-decoration:none;
+}
+.attentionrate a:hover{
+	text-decoration:underline;
+}
+
+/*特色推荐*/
+#recommend{
+	width:960px;
+	height:200px;
+	margin:20px 0 0 0;
+}
+.titlename2{
+	color:#FFFFFF;
+	display:block;
+	/*width:920px;
+	height:30px;*/
+	line-height:30px;/*
+	background:url(../Images/titlebg.jpg) no-repeat;*/
+	padding:0 0 0 40px;
+}
+.rmdcity{
+	height:160px;
+	width:960px;
+	margin:10px 0 0 0;
+	float:left;
+}
+.rightpitch{
+	margin:0 5px 0 0;
+}
+
+/*广告语*/
+#slogan{
+	width:958px;
+	height:118px;
+	border:1px solid #CCCCCC;
+	margin:20px 0 0 0;
+}
+#slogan1{
+	width:238px;
+	height:78px;
+	float:left;
+	border-right:1px solid #CCCCCC;
+	margin:30px 0 10px 0;
+}
+#slogan2{
+	width:238px;
+	height:78px;
+	float:left;
+	margin:30px 0 10px 0;
+}
+.sloganimg{
+	width:40px;
+	height:78px;
+	float:left;
+	margin:0 0 0 20px;
+}
+.textslogan{
+	width:150px;
+	height:78px;
+	float:right;
+	margin:0 10px 0 0;
+}
+.textslogan a{
+	color:gray;
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.textslogan a:hover{
+	text-decoration:underline;
+}
+.textslogan p{
+	color:#999999;
+	line-height:20px;
+}
+
+
+
+
+
+
+
+

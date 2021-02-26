@@ -1,0 +1,93 @@
+
+
+
+.clear{clear:both;}
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*基本资料*/
+.subtitle{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #006666;
+	margin:0 0 10px 0;
+}
+.wad{
+	width:80px;
+	height:27px;
+	text-align:center;
+	margin:0 0 0 30px;
+	border-left:3px solid #006666;
+	border-top:3px solid #006666;
+	border-right:3px solid #006666;
+	border-bottom:3px solid #FFFFFF;
+}
+.stitle{
+	color:#006666;
+	font-weight:bold;
+}
+
+
+/*基本资料修改部分*/
+.perinfo{
+	color: #006666;
+	font-size:20px;
+}
+.perinfo a{
+	color:blue;
+	font-size:12px;
+	text-decoration:none;
+}
+.perinfo a:hover{
+	text-decoration:underline;
+}
+.txtcontent{
+	font-size:12px;
+	color:#666666;
+}
+
+/*修改并提交按钮*/
+#modsubbtn{
+	color:#FFFFFF;
+	font-size:14px;
+	text-align:center;
+	width:150px;
+	height:30px;
+	background:url(../UserInfo/images/modifybtn.jpg) no-repeat;
+}
+.modify2{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	margin:30px 0 0 0;
+}
+
+
+
+
+
+
+
+

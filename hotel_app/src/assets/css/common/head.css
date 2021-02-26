@@ -1,0 +1,242 @@
+*{margin:0;padding:0;list-style-type:none;}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color:#fff;
+}
+#container{
+	width:960px;
+	margin:0 auto;
+}
+
+
+/*导航菜单*/
+#nav{
+	width:960px;
+	height:40px;
+	line-height:40px;
+	background:url(../../Common/images/nav-bg.jpg);
+	display:block;
+	overflow:hidden;
+}
+.logo{
+	float:left; 
+	margin:0 80px 0 30px;
+	height:40px;
+}
+#navMenu ul{
+	float:left;
+	height:40px;
+}
+#navMenu li{
+	float:left;
+	padding:5px 0 0 0;
+}
+#navMenu li a{
+	color:#fff!important;
+	text-decoration:none;
+	width:91px;
+	height:40px;
+	line-height:35px;
+	text-align:center;
+	background-image:url(../../Common/images/navbg.jpg);
+	display:block;
+}
+#navMenu li a.last{
+	width:92px;
+}
+#navMenu li a:hover{
+	background-position:0 -40px;
+}
+
+/*加入关注*/
+.attention{
+	float:left;
+	width:70px;
+	height:30px;
+	margin:10px 0 0 0;
+}
+
+/*搜索框*/
+.search{
+	float:right;
+	height:40px;
+	width:280px;
+	background:url(../../Common/images/searvhbg.jpg) no-repeat;
+}
+.selectBox{
+	float:left;
+	margin:10px 3px 0 10px;
+}
+.searcher{
+	float:right;
+	width:20px;
+	height:20px;
+	margin:10px 10px 10px 0;
+}
+
+/*-------- 下拉菜单 --------------*/
+.dropMenu{
+	position:absolute;
+	top:0;
+	z-index:100;
+	visibility:hidden;
+	margin-top:-2px;
+	border:1px solid #CCCCCC;
+	border-top:0;
+	background-color:#FFFFFF;
+	padding:10px;
+	width:400px;
+}
+#dropmenu1{
+	padding:0 10px 10px 10px;
+	width:500px;
+}
+
+.province{
+	font-weight:bold;
+	color:#999999;
+	padding:0 0 0 5px;
+}
+.dropMenu li{
+	float:left;
+	width:80px;
+	height:20px;
+}
+.dropMenu li a{
+	display:block;
+	padding:5px 0 0 5px;
+	text-decoration:none;
+	color:#0000FF;
+ }
+.dropMenu a:hover{
+	text-decoration:underline;
+	color:#FF6633;
+}
+.tdborder{
+	border-bottom:1px dashed #CCCCCC;
+	border-left:none;
+	border-right:none;
+}
+
+
+
+
+
+/*按首字母选择城市*/
+.citySelector{background: #fff; }
+.cityslide {
+	width:250px; 
+	list-style:none; 
+	margin:0;
+	padding:0; 
+
+}
+.cityslide li { 
+	list-style:none; 
+	overflow:hidden;  
+	height:16px; 
+	padding:4px 5px;
+}
+.cityslide li.on{
+	background:#9CD9FF; 
+	color:#fff;
+}
+.cityslide li b { 
+	font-weight:normal;
+}
+.cityslide li.empty{ 
+	background: #fff2e8; 
+	color: #666;
+}
+.cityslide li.empty em{
+	color: red; 
+	font-style:normal;
+}
+.cityname {
+	float:left;
+}
+.cityspell {
+	float:right;
+}
+.cityBox{ 
+	width: 320px; 
+	border: 1px solid #85BEE5; 
+	overflow: hidden; 
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.cityBox ul{ 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden;
+}
+.cityBox ul li{ 
+	float: left; 
+	list-style: none; 
+	padding: 2px 4px; 
+	border: 1px solid #85BEE5; 
+	cursor:pointer; 
+	margin-left: 4px; 
+	display: inline; 
+	background: #E1EFFE;
+}
+.cityBox ul li.on{ 
+	background: #fff; 
+	border-bottom-color:#fff; 
+	position: relative;
+}
+.hide{ 
+	display: none;
+}
+p.tip{ 
+	color:#666; 
+	line-height: 20px; 
+	padding: 5px; 
+	margin: 0; 
+	text-indent: 3px;
+}
+.hotCity{ 
+	border-top: 1px solid #85BEE5; 
+	margin-top: -1px; 
+	clear:left; 
+	overflow: hidden; 
+	padding-bottom: 5px; 
+	padding-top: 5px; 
+	_margin-bottom:8px;
+}
+.cityTab{
+	overflow: hidden;
+}
+.cityTab dl{ 
+	margin:0; 
+	padding: 0; 
+	overflow: hidden; 
+}
+.cityTab dl dt{
+	float: left; 
+	padding-left: 3px;
+	color: #F30;
+	text-indent: 5px; 
+	font-family: "Lucida console","consolas","courier new";
+	line-height: 22px; 
+	font-size: 14px; 
+	width: 20px;
+}
+.cityTab dl dd{ 
+	margin-left:2px; 
+	float:left; 
+	width: 290px;
+}
+.cityTab dl dd a{ 
+	padding-left:5px; 
+	width:66px; 
+	line-height: 22px; 
+	display: inline-block; 
+	color: #000; 
+	text-decoration: none;
+}
+.cityTab dl dd a:hover{
+	text-decoration:underline; 
+	color: red;
+}
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天堂鸟-所有目的地</title>
+<link href="../css/ChooseCity.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/head.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/neck.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/foot.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../public/js/head.js"></script>
+<script src="../Js/DestinationSearch/citySelector.js" type="text/javascript"></script>
+<script src="../Js/ChooseCity/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--top 整个头部-->
+		<div id="nav">
+	  <!--logo-->
+	  <div class="logo"> <img src="../Common/images/logo.png" width="120" height="80" border="0"/> </div>
+	  <!--导航-->
+	  <ul id="navMenu">
+		<li><a href="#" rel='dropmenu1'>国内目的地</a></li>
+		<li><a href="#" rel='dropmenu2'>主题推荐</a></li>
+		<li><a href="#" rel='dropmenu3'>出游类型</a></li>
+		<li><a href="TravelGuide.html" rel='dropmenu4'>旅游指南</a></li>
+	  </ul>
+	  <div class="attention"> 
+	  	<a href="#" class="atnimg"><img src="../Common/images/attention.jpg" width="70" height="25" border="0"/></a> 
+	  </div>
+	  <!--手动搜索-->
+	  <div class="search" valign="middle">
+		
+	  	<!--下拉框-->
+		<div class="selectBox">
+			<input type="text" class="cityinput" id="citySelect" value="城市名" style="border:0;background: none transparent scroll repeat 0% 0%;width:95px;height:20px;">
+		</div>	
+		
+		 <input name="text" type="text" class="searcText" style="border:0;background: none transparent scroll repeat 0% 0%;width:130px;height:20px;margin:10px 0 0 2px;float:left;"/>
+		 <div class="searcher">
+		 	<a href="#"><img src="../Common/images/searcher.jpg" width="20" height="20" border="0"/></a>
+		 </div>
+	  </div>
+	</div>
+	
+	<!--导航下拉菜单-->
+		<div id="dropmenu1" class="dropMenu">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="80" class="tdborder">
+					<span class="province">直辖市</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">北京</a></li>
+						<li><a href="#">上海</a></li>
+						<li><a href="#">天津</a></li>
+						<li><a href="#">重庆</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">港澳台</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">香港</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">海南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="../House/CityHouse.html">三亚</a></li>
+						<li><a href="#">博鳌(琼海)</a></li>
+						<li><a href="#">文章</a></li>
+						<li><a href="#">五指山</a></li>
+						<li><a href="#">陵水（三亚）</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">西南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">桂林</a></li>
+						<li><a href="#">大理</a></li>
+						<li><a href="#">丽江</a></li>
+						<li><a href="#">昆明</a></li>
+						<li><a href="#">腾冲</a></li>
+						<li><a href="#">西双版纳</a></li>
+						<li><a href="#">香格里拉</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">山东</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">青岛</a></li>
+						<li><a href="#">威海</a></li>
+						<li><a href="#">烟台</a></li>
+						<li><a href="#">蓬莱</a></li>
+						<li><a href="#">济南</a></li>
+						<li><a href="#">栖霞（烟台）</a></li>
+						<li><a href="#">枣庄</a></li>
+						<li><a href="#">泰安</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">江苏</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">南京</a></li>
+						<li><a href="#">无锡</a></li>
+						<li><a href="#">苏州</a></li>
+						<li><a href="#">南通</a></li>
+						<li><a href="#">扬州</a></li>
+						<li><a href="#">镇江</a></li>
+						<li><a href="#">盱眙</a></li>
+						<li><a href="#">周庄</a></li>
+						<li><a href="#">常州</a></li>
+						<li><a href="#">昆山</a></li>
+						<li><a href="#">连云港</a></li>
+						<li><a href="#">盐城</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">浙江</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">杭州</a></li>
+						<li><a href="#">千岛湖</a></li>
+						<li><a href="#">宁波</a></li>
+						<li><a href="#">舟山</a></li>
+						<li><a href="#">西塘</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">四川</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">成都</a></li>
+						<li><a href="#">九寨沟</a></li>
+						<li><a href="#">峨眉山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">广东</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">广州</a></li>
+						<li><a href="#">深圳</a></li>
+						<li><a href="#">珠海</a></li>
+						<li><a href="#">佛山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">山陕</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">西安</a></li>
+						<li><a href="#">延安</a></li>
+						<li><a href="#">平遥</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">东北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">大连</a></li>
+						<li><a href="#">营口</a></li>
+						<li><a href="#">哈尔滨</a></li>
+						<li><a href="#">沈阳</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">安徽</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">合肥</a></li>
+						<li><a href="#">黄山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">福建</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">福州</a></li>
+						<li><a href="#">厦门</a></li>
+						<li><a href="#">武夷山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">江西</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">南昌</a></li>
+						<li><a href="#">庐山</a></li>
+						<li><a href="#">婺源</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">湖南湖北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">武汉</a></li>
+						<li><a href="#">长沙</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">河南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">郑州汉</a></li>
+						<li><a href="#">洛阳</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">河北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">承德</a></li>
+						<li><a href="#">秦皇岛</a></li>
+						<li><a href="#">张家口</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">西北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">兰州</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">内蒙古</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">呼伦贝尔</a></li>
+						<li><a href="#">满洲里</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+		<ul id="dropmenu2" class="dropMenu">
+			<li><a href="#">相约海岛</a></li>
+			<li><a href="SpecialTopic.html">海滨漫步</a></li>
+			<li><a href="#">休闲时光</a></li>
+			<li><a href="#">极致体验</a></li>
+			<li><a href="#">赏花踏青</a></li>
+		</ul>
+		<ul id="dropmenu3" class="dropMenu">
+			<li><a href="#">浪漫之旅</a></li>
+			<li><a href="#">家庭出游</a></li>
+			<li><a href="#">朋友聚会</a></li>
+		</ul>
+		
+		
+		<script type="text/javascript">cssdropdown.startchrome("navMenu")</script> 
+	<!--top 头部结束-->
+	
+	<!--颈部-->
+	<div id="neck">
+		<!--登录注册行-->
+		<div class="link">
+			<a href="#">手机客户端</a>
+			<a href="#">在线客服</a>
+			<a href="../UserInfo/OrderList.html">我的天堂鸟</a>
+			<a href="../Home.html">退出</a>
+			<div class="username">
+				<a href="../UserInfo/OrderList.html">187****9013</a>
+				<span>您好，</span>
+			</div>
+		</div>
+		
+		<!--面包屑导航-->
+		<div class="bread">
+			<a href="../Home.html">天堂鸟</a>
+			<span>></span>
+			<a href="TravelGuide.html">旅游指南</a>
+			<span>></span>
+			<span>所有目的地</span>
+			
+		</div>
+		
+	</div>
+	<!--颈部结束-->
+	
+	<div class="clear"></div>
+	
+	
+
+
+	<div id="change-city">
+	  <div id="bdw" class="bdw">
+		<div id="bd" class="cf">
+		  <div class="choosecities">
+			<div class="citieslist">
+			  <h2>按拼音首字母选择<span class="arrow">&raquo;</span></h2>
+			  <ol class="hasallcity">
+				<li id="city-A">
+				  <p class="cf"><span class="label"><strong>A</strong></span><span><a class="isonline" href="CityGuide.html">鞍山</a><a class="isoffline" href="#">安顺</a><a class="isoffline" href="#">阿坝</a><a class="isoffline" href="#">阿拉善</a><a class="isoffline" href="#">阿里</a><a class="isoffline" href="#">安康</a><a class="isoffline" href="#">阿克苏</a><a class="isoffline" href="#">安庆</a><a class="isoffline" href="#">阿勒泰</a><a class="isoffline" href="#">安阳</a><a class="isoffline" href="#">澳门</a></span></p>
+				</li>
+				<li id="city-B">
+				  <p class="cf"><span class="label"><strong>B</strong></span><span><a class="isonline" href="#">北京</a><a class="isonline" href="#">包头</a><a class="isoffline" href="#">保定</a><a class="isoffline" href="#">巴中</a><a class="isoffline" href="#">蚌埠</a><a class="isoffline" href="#">白银</a><a class="isoffline" href="#">白城</a><a class="isoffline" href="#">白山</a><a class="isoffline" href="#">北海</a><a class="isoffline" href="#">巴彦淖尔</a><a class="isoffline" href="#">宝鸡</a><a class="isoffline" href="#">百色</a><a class="isoffline" href="#">本溪</a><a class="isoffline" href="#">保山</a><a class="isoffline" href="#">毕节</a><a class="isoffline" href="#">博尔塔拉</a><a class="isoffline" href="#">滨州</a><a class="isoffline" href="#">亳州</a><a class="isoffline" href="#">巴州</a></span></p>
+				</li>
+				<li id="city-C">
+				  <p class="cf"><span class="label"><strong>C</strong></span><span><a class="isonline" href="#">成都</a><a class="isonline" href="#m">重庆</a><a class="isonline" href="#">常州</a><a class="isonline" href="#">长沙</a><a class="isonline" href="#">长春</a><a class="isoffline" href="#">赤峰</a><a class="isoffline" href="#">楚雄</a><a class="isoffline" href="#">长治</a><a class="isoffline" href="#">巢湖</a><a class="isoffline" href="#">崇左</a><a class="isoffline" href="#">潮州</a><a class="isoffline" href="#">昌吉</a><a class="isoffline" href="#">沧州</a><a class="isoffline" href="#">郴州</a><a class="isoffline" href="#">常德</a><a class="isoffline" href="#">滁州</a><a class="isoffline" href="#">朝阳</a><a class="isoffline" href="#">昌都</a><a class="isoffline" href="#">池州</a><a class="isoffline" href="#">承德</a></span></p>
+				</li>
+				<li id="city-D">
+				  <p class="cf"><span class="label"><strong>D</strong></span><span><a class="isonline" href="#">东莞</a><a class="isonline" href="#">大连</a><a class="isonline" href="#">东营</a><a class="isoffline" href="#">大庆</a><a class="isoffline" href="#">大同</a><a class="isoffline" href="#">大理</a><a class="isoffline" href="#">德阳</a><a class="isoffline" href="#">迪庆</a><a class="isoffline" href="#">达州</a><a class="isoffline" href="#">德州</a><a class="isoffline" href="#">丹东</a><a class="isoffline" href="#">大兴安岭</a><a class="isoffline" href="#">德宏</a><a class="isoffline" href="#">定西</a></span></p>
+				</li>
+				<li id="city-E">
+				  <p class="cf"><span class="label"><strong>E</strong></span><span><a class="isoffline" href="#">恩施</a><a class="isoffline" href="#">鄂州</a><a class="isoffline" href="#">鄂尔多斯</a></span></p>
+				</li>
+				<li id="city-F">
+				  <p class="cf"><span class="label"><strong>F</strong></span><span><a class="isonline" href="#">福州</a><a class="isonline" href="#">佛山</a><a class="isonline" href="#">抚顺</a><a class="isoffline" href="#">阜阳</a><a class="isoffline" href="#">抚州</a><a class="isoffline" href="#">防城港</a><a class="isoffline" href="#">阜新</a></span></p>
+				</li>
+				<li id="city-G">
+				  <p class="cf"><span class="label"><strong>G</strong></span><span><a class="isonline" href="#">广州</a><a class="isonline" href="#">贵阳</a><a class="isonline" href="#">桂林</a><a class="isoffline" href="#">赣州</a><a class="isoffline" href="#">广元</a><a class="isoffline" href="#">果洛</a><a class="isoffline" href="#">固原</a><a class="isoffline" href="#">甘南</a><a class="isoffline" href="#">甘孜</a><a class="isoffline" href="#">广安</a><a class="isoffline" href="#">贵港</a></span></p>
+				</li>
+				<li id="city-H">
+				  <p class="cf"><span class="label"><strong>H</strong></span><span><a class="isonline" href="http://niutuku.com">杭州</a><a class="isonline" href="http://niutuku.com">哈尔滨</a><a class="isonline" href="http://niutuku.com">合肥</a><a class="isonline" href="http://niutuku.com">邯郸</a><a class="isonline" href="http://niutuku.com">惠州</a><a class="isonline" href="http://niutuku.com">海口</a><a class="isonline" href="http://niutuku.com">呼和浩特</a><a class="isonline" href="http://niutuku.com">衡阳</a><a class="isonline" href="http://niutuku.com">湖州</a><a class="isoffline" href="http://niutuku.com">淮北</a><a class="isoffline" href="http://niutuku.com">鹤岗</a><a class="isoffline" href="http://niutuku.com">海北</a><a class="isoffline" href="http://niutuku.com">海东</a><a class="isoffline" href="http://niutuku.com">黄南</a><a class="isoffline" href="http://niutuku.com">菏泽</a><a class="isoffline" href="http://niutuku.com">海南州</a><a class="isoffline" href="http://niutuku.com">黑河</a><a class="isoffline" href="http://niutuku.com">和田</a><a class="isoffline" href="http://niutuku.com">哈密</a><a class="isoffline" href="http://niutuku.com">淮安</a><a class="isoffline" href="http://niutuku.com">淮南</a><a class="isoffline" href="http://niutuku.com">黄山</a><a class="isoffline" href="http://niutuku.com">海西</a><a class="isoffline" href="http://niutuku.com">贺州</a><a class="isoffline" href="http://niutuku.com">怀化</a><a class="isoffline" href="http://niutuku.com">河池</a><a class="isoffline" href="http://niutuku.com">呼伦贝尔</a><a class="isoffline" href="http://niutuku.com">衡水</a><a class="isoffline" href="http://niutuku.com">河源</a><a class="isoffline" href="http://niutuku.com">红河</a><a class="isoffline" href="http://niutuku.com">汉中</a><a class="isoffline" href="http://niutuku.com">黄冈</a><a class="isoffline" href="http://niutuku.com">黄石</a><a class="isoffline" href="http://niutuku.com">鹤壁</a><a class="isoffline" href="http://niutuku.com">葫芦岛</a></span></p>
+				</li>
+				<li id="city-J">
+				  <p class="cf"><span class="label"><strong>J</strong></span><span><a class="isonline" href="http://niutuku.com">济南</a><a class="isonline" href="http://niutuku.com">济宁</a><a class="isonline" href="http://niutuku.com">嘉兴</a><a class="isonline" href="http://niutuku.com">金华</a><a class="isonline" href="http://niutuku.com">焦作</a><a class="isonline" href="http://niutuku.com">荆州</a><a class="isonline" href="http://niutuku.com">吉林</a><a class="isonline" href="http://niutuku.com">锦州</a><a class="isonline" href="http://niutuku.com">江门</a><a class="isoffline" href="http://niutuku.com">景德镇</a><a class="isoffline" href="http://niutuku.com">吉安</a><a class="isoffline" href="http://niutuku.com">佳木斯</a><a class="isoffline" href="http://niutuku.com">酒泉</a><a class="isoffline" href="http://niutuku.com">金昌</a><a class="isoffline" href="http://niutuku.com">鸡西</a><a class="isoffline" href="http://niutuku.com">济源</a><a class="isoffline" href="http://niutuku.com">晋城</a><a class="isoffline" href="http://niutuku.com">揭阳</a><a class="isoffline" href="http://niutuku.com">晋中</a><a class="isoffline" href="http://niutuku.com">荆门</a><a class="isoffline" href="http://niutuku.com">九江</a></span></p>
+				</li>
+				<li id="city-K">
+				  <p class="cf"><span class="label"><strong>K</strong></span><span><a class="isonline" href="http://niutuku.com">昆明</a><a class="isonline" href="http://niutuku.com">昆山</a><a class="isoffline" href="http://niutuku.com">喀什</a><a class="isoffline" href="http://niutuku.com">克拉玛依</a><a class="isoffline" href="http://niutuku.com">开封</a><a class="isoffline" href="http://niutuku.com">克州</a></span></p>
+				</li>
+				<li id="city-L">
+				  <p class="cf"><span class="label"><strong>L</strong></span><span><a class="isonline" href="http://niutuku.com">兰州</a><a class="isonline" href="http://niutuku.com">临沂</a><a class="isonline" href="http://niutuku.com">连云港</a><a class="isonline" href="http://niutuku.com">聊城</a><a class="isonline" href="http://niutuku.com">临汾</a><a class="isonline" href="http://niutuku.com">柳州</a><a class="isonline" href="http://niutuku.com">洛阳</a><a class="isonline" href="http://niutuku.com">廊坊</a><a class="isoffline" href="http://niutuku.com">龙岩</a><a class="isoffline" href="http://niutuku.com">六盘水</a><a class="isoffline" href="http://niutuku.com">凉山</a><a class="isoffline" href="http://niutuku.com">六安</a><a class="isoffline" href="http://niutuku.com">丽江</a><a class="isoffline" href="http://niutuku.com">临沧</a><a class="isoffline" href="http://niutuku.com">陇南</a><a class="isoffline" href="http://niutuku.com">拉萨</a><a class="isoffline" href="http://niutuku.com">辽源</a><a class="isoffline" href="http://niutuku.com">辽阳</a><a class="isoffline" href="http://niutuku.com">莱芜</a><a class="isoffline" href="http://niutuku.com">漯河</a><a class="isoffline" href="http://niutuku.com">吕梁</a><a class="isoffline" href="http://niutuku.com">丽水</a><a class="isoffline" href="http://niutuku.com">临夏</a><a class="isoffline" href="http://niutuku.com">林芝</a><a class="isoffline" href="http://niutuku.com">娄底</a><a class="isoffline" href="http://niutuku.com">来宾</a><a class="isoffline" href="http://niutuku.com">泸州</a><a class="isoffline" href="http://niutuku.com">乐山</a></span></p>
+				</li>
+				<li id="city-M">
+				  <p class="cf"><span class="label"><strong>M</strong></span><span><a class="isoffline" href="http://niutuku.com">马鞍山</a><a class="isoffline" href="http://niutuku.com">绵阳</a><a class="isoffline" href="http://niutuku.com">茂名</a><a class="isoffline" href="http://niutuku.com">牡丹江</a><a class="isoffline" href="http://niutuku.com">梅州</a><a class="isoffline" href="http://niutuku.com">眉山</a></span></p>
+				</li>
+				<li id="city-N">
+				  <p class="cf"><span class="label"><strong>N</strong></span><span><a class="isonline" href="http://niutuku.com">南京</a><a class="isonline" href="http://niutuku.com">宁波</a><a class="isonline" href="http://niutuku.com">南通</a><a class="isonline" href="http://niutuku.com">南宁</a><a class="isonline" href="http://niutuku.com">南昌</a><a class="isoffline" href="http://niutuku.com">南充</a><a class="isoffline" href="http://niutuku.com">宁德</a><a class="isoffline" href="http://niutuku.com">内江</a><a class="isoffline" href="http://niutuku.com">怒江</a><a class="isoffline" href="http://niutuku.com">南平</a><a class="isoffline" href="http://niutuku.com">南阳</a><a class="isoffline" href="http://niutuku.com">那曲</a></span></p>
+				</li>
+	
+				<li id="city-P">
+				  <p class="cf"><span class="label"><strong>P</strong></span><span><a class="isoffline" href="http://niutuku.com">萍乡</a><a class="isoffline" href="http://niutuku.com">平顶山</a><a class="isoffline" href="http://niutuku.com">莆田</a><a class="isoffline" href="http://niutuku.com">濮阳</a><a class="isoffline" href="http://niutuku.com">攀枝花</a><a class="isoffline" href="http://niutuku.com">平凉</a><a class="isoffline" href="http://niutuku.com">普洱</a><a class="isoffline" href="http://niutuku.com">盘锦</a></span></p>
+				</li>
+				<li id="city-Q">
+				  <p class="cf"><span class="label"><strong>Q</strong></span><span><a class="isonline" href="http://niutuku.com">青岛</a><a class="isonline" href="http://niutuku.com">泉州</a><a class="isonline" href="http://niutuku.com">秦皇岛</a><a class="isonline" href="http://niutuku.com">齐齐哈尔</a><a class="isoffline" href="http://niutuku.com">庆阳</a><a class="isoffline" href="http://niutuku.com">衢州</a><a class="isoffline" href="http://niutuku.com">黔西南</a><a class="isoffline" href="http://niutuku.com">钦州</a><a class="isoffline" href="http://niutuku.com">黔南</a><a class="isoffline" href="http://niutuku.com">曲靖</a><a class="isoffline" href="http://niutuku.com">黔东南</a><a class="isoffline" href="http://niutuku.com">七台河</a><a class="isoffline" href="http://niutuku.com">清远</a></span></p>
+				</li>
+				<li id="city-R">
+				  <p class="cf"><span class="label"><strong>R</strong></span><span><a class="isoffline" href="http://niutuku.com">日照</a><a class="isoffline" href="http://niutuku.com">日喀则</a></span></p>
+				</li>
+				<li id="city-S">
+				  <p class="cf"><span class="label"><strong>S</strong></span><span><a class="isonline" href="http://niutuku.com">上海</a><a class="isonline" href="http://niutuku.com">深圳</a><a class="isonline" href="http://niutuku.com">沈阳</a><a class="isonline" href="http://niutuku.com">苏州</a><a class="isonline" href="http://niutuku.com">石家庄</a><a class="isonline" href="http://niutuku.com">绍兴</a><a class="isonline" href="http://niutuku.com">顺德</a><a class="isonline" href="CityGuide.html">三亚</a><a class="isoffline" href="http://niutuku.com">韶关</a><a class="isoffline" href="http://niutuku.com">绥化</a><a class="isoffline" href="http://niutuku.com">松原</a><a class="isoffline" href="http://niutuku.com">上饶</a><a class="isoffline" href="http://niutuku.com">十堰</a><a class="isoffline" href="http://niutuku.com">三门峡</a><a class="isoffline" href="http://niutuku.com">山南</a><a class="isoffline" href="http://niutuku.com">邵阳</a><a class="isoffline" href="http://niutuku.com">遂宁</a><a class="isoffline" href="http://niutuku.com">商丘</a><a class="isoffline" href="http://niutuku.com">朔州</a><a class="isoffline" href="http://niutuku.com">随州</a><a class="isoffline" href="http://niutuku.com">汕尾</a><a class="isoffline" href="http://niutuku.com">四平</a><a class="isoffline" href="http://niutuku.com">三峡</a><a class="isoffline" href="http://niutuku.com">宿迁</a><a class="isoffline" href="http://niutuku.com">三明</a><a class="isoffline" href="http://niutuku.com">石嘴山</a><a class="isoffline" href="http://niutuku.com">双鸭山</a><a class="isoffline" href="http://niutuku.com">汕头</a><a class="isoffline" href="http://niutuku.com">宿州</a><a class="isoffline" href="http://niutuku.com">商洛</a></span></p>
+				</li>
+				<li id="city-T">
+				  <p class="cf"><span class="label"><strong>T</strong></span><span><a class="isonline" href="http://niutuku.com">天津</a><a class="isonline" href="http://niutuku.com">太原</a><a class="isonline" href="http://niutuku.com">泰安</a><a class="isonline" href="http://niutuku.com">台州</a><a class="isonline" href="http://niutuku.com">唐山</a><a class="isonline" href="http://niutuku.com">泰州</a><a class="isoffline" href="http://niutuku.com">塔城</a><a class="isoffline" href="http://niutuku.com">铜陵</a><a class="isoffline" href="http://niutuku.com">铜川</a><a class="isoffline" href="http://niutuku.com">台北</a><a class="isoffline" href="http://niutuku.com">铜仁</a><a class="isoffline" href="http://niutuku.com">吐鲁番</a><a class="isoffline" href="http://niutuku.com">天水</a><a class="isoffline" href="http://niutuku.com">通辽</a><a class="isoffline" href="http://niutuku.com">铁岭</a><a class="isoffline" href="http://niutuku.com">通化</a></span></p>
+				</li>
+				<li id="city-W">
+				  <p class="cf"><span class="label"><strong>W</strong></span><span><a class="isonline" href="http://niutuku.com">武汉</a><a class="isonline" href="http://niutuku.com">无锡</a><a class="isonline" href="http://niutuku.com">温州</a><a class="isonline" href="http://niutuku.com">芜湖</a><a class="isonline" href="http://niutuku.com">威海</a><a class="isonline" href="http://niutuku.com">潍坊</a><a class="isoffline" href="http://niutuku.com">乌鲁木齐</a><a class="isoffline" href="http://niutuku.com">梧州</a><a class="isoffline" href="http://niutuku.com">吴忠</a><a class="isoffline" href="http://niutuku.com">武威</a><a class="isoffline" href="http://niutuku.com">渭南</a><a class="isoffline" href="http://niutuku.com">乌兰察布</a><a class="isoffline" href="http://niutuku.com">文山</a><a class="isoffline" href="http://niutuku.com">乌海</a></span></p>
+				</li>
+				<li id="city-X">
+				  <p class="cf"><span class="label"><strong>X</strong></span><span><a class="isonline" href="http://niutuku.com">西安</a><a class="isonline" href="http://niutuku.com">厦门</a><a class="isonline" href="http://niutuku.com">徐州</a><a class="isonline" href="http://niutuku.com">襄阳</a><a class="isonline" href="http://niutuku.com">西宁</a><a class="isoffline" href="http://niutuku.com">孝感</a><a class="isoffline" href="http://niutuku.com">西双版纳</a><a class="isoffline" href="http://niutuku.com">新余</a><a class="isoffline" href="http://niutuku.com">湘潭</a><a class="isoffline" href="http://niutuku.com">锡林郭勒</a><a class="isoffline" href="http://niutuku.com">兴安</a><a class="isoffline" href="http://niutuku.com">邢台</a><a class="isoffline" href="http://niutuku.com">新乡</a><a class="isoffline" href="http://niutuku.com">湘西</a><a class="isoffline" href="http://niutuku.com">忻州</a><a class="isoffline" href="http://niutuku.com">咸阳</a><a class="isoffline" href="http://niutuku.com">宣城</a><a class="isoffline" href="http://niutuku.com">香港</a><a class="isoffline" href="http://niutuku.com">信阳</a><a class="isoffline" href="http://niutuku.com">咸宁</a><a class="isoffline" href="http://niutuku.com">许昌</a></span></p>
+				</li>
+				<li id="city-Y">
+				  <p class="cf"><span class="label"><strong>Y</strong></span><span><a class="isonline" href="http://niutuku.com">扬州</a><a class="isonline" href="http://niutuku.com">烟台</a><a class="isonline" href="http://niutuku.com">盐城</a><a class="isonline" href="http://niutuku.com">运城</a><a class="isonline" href="http://niutuku.com">义乌</a><a class="isonline" href="http://niutuku.com">岳阳</a><a class="isonline" href="http://niutuku.com">宜昌</a><a class="isoffline" href="http://niutuku.com">玉林</a><a class="isoffline" href="http://niutuku.com">银川</a><a class="isoffline" href="http://niutuku.com">鹰潭</a><a class="isoffline" href="http://niutuku.com">雅安</a><a class="isoffline" href="http://niutuku.com">伊犁</a><a class="isoffline" href="http://niutuku.com">玉树</a><a class="isoffline" href="http://niutuku.com">宜春</a><a class="isoffline" href="http://niutuku.com">营口</a><a class="isoffline" href="http://niutuku.com">永州</a><a class="isoffline" href="http://niutuku.com">宜宾</a><a class="isoffline" href="http://niutuku.com">益阳</a><a class="isoffline" href="http://niutuku.com">玉溪</a><a class="isoffline" href="http://niutuku.com">阳泉</a><a class="isoffline" href="http://niutuku.com">延安</a><a class="isoffline" href="http://niutuku.com">榆林</a><a class="isoffline" href="http://niutuku.com">云浮</a><a class="isoffline" href="http://niutuku.com">延边</a><a class="isoffline" href="http://niutuku.com">阳江</a><a class="isoffline" href="http://niutuku.com">伊春</a></span></p>
+				</li>
+				<li id="city-Z">
+				  <p class="cf"><span class="label"><strong>Z</strong></span><span><a class="isonline" href="http://niutuku.com">郑州</a><a class="isonline" href="http://niutuku.com">镇江</a><a class="isonline" href="http://niutuku.com">中山</a><a class="isonline" href="http://niutuku.com">淄博</a><a class="isonline" href="http://niutuku.com">珠海</a><a class="isonline" href="http://niutuku.com">遵义</a><a class="isoffline" href="http://niutuku.com">株洲</a><a class="isoffline" href="http://niutuku.com">自贡</a><a class="isoffline" href="http://niutuku.com">舟山</a><a class="isoffline" href="http://niutuku.com">湛江</a><a class="isoffline" href="http://niutuku.com">肇庆</a><a class="isoffline" href="http://niutuku.com">漳州</a><a class="isoffline" href="http://niutuku.com">张掖</a><a class="isoffline" href="http://niutuku.com">昭通</a><a class="isoffline" href="http://niutuku.com">张家界</a><a class="isoffline" href="http://niutuku.com">周口</a><a class="isoffline" href="http://niutuku.com">驻马店</a><a class="isoffline" href="http://niutuku.com">张家口</a><a class="isoffline" href="http://niutuku.com">资阳</a><a class="isoffline" href="http://niutuku.com">中卫</a><a class="isoffline" href="http://niutuku.com">枣庄</a></span></p>
+				</li>
+			  </ol>
+			</div>
+		  </div>
+		</div>
+		<!-- bd end -->
+	  </div>
+	  <!-- bdw end -->
+	</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="clear"></div>
+		
+	<!--foot-->
+	<div id="foot">
+			<a href="#">关于我们 |</a>
+			<a href="#">业务介绍 |</a>
+			<a href="#">加入天堂鸟 |</a>
+			<a href="#">帮助中心 |</a>
+			<a href="#">网站地图</a>
+			<p>@ Copyright 2020 tiantangniao.com 天堂鸟 版权所有 不得转载</p>
+			<p>京ICP备11043397号</p>
+	</div>
+	<!--foot结束-->
+	
+</div>
+
+<!--文本框js方法调用-->
+<script type="text/javascript">
+    var test=new Vcity.CitySelector({input:'citySelect'});
+    var test2=new Vcity.CitySelector({input:'citySelect1'});
+</script>
+
+<!--页面js方法调用-->
+<script language="javascript" type="text/javascript">
+$(function (){
+	$(".hasallcity li").hover(function(){
+		$(this).addClass('hover');
+	}, function(){
+		$(this).removeClass('hover');
+	});	
+});
+</script>
+</body>
+</html>

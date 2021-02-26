@@ -1,0 +1,291 @@
+.clear{
+	clear:both;
+}
+
+
+/*上面主题部分开始*/
+.theme{
+	width:960px;
+	height:400px;
+	margin:0 0 20px 0;
+}
+/*左侧主题文字介绍部分*/
+.themeleft{
+	width:400px;
+	height:350px;
+	float:left;
+}
+.themetitle{
+	height:30px;
+}
+.horizontalline{
+	width:300px;
+	float:left;
+	height:10px;
+	border-bottom:2px solid #CCCCCC;
+}
+.themetitle h2{
+	color:#006666;
+	float:right;
+}
+.themeintro{
+	width:150px;
+	margin:0 100px 0 100px;
+	padding:0 20px 15px 30px;
+	line-height:20px;
+	color:#9FA64D;
+	border-bottom:2px solid #CCCCCC;
+}
+
+/*主题城市文字简介*/
+.cityintro{
+	margin:20px 0 0 0;
+	line-height:20px;
+}
+.cityintro h3{
+	color:#CB6A30;
+}
+
+/*右侧焦点图*/
+.themeFocus{
+	width:540px;
+	height:350px;
+	float:right;
+	margin:0 0 0 20px;
+}
+
+
+#inner { 
+	width: 540px; 
+	margin: 0 auto; 
+}
+.hot-event { 
+	padding: 350px 0 0; 
+	position: relative;
+}
+.hot-event .switch-tab { 
+	text-align: center; 
+	padding: 10px 0; 
+}
+.hot-event .switch-tab a, .hot-event .switch-tab .current { 
+	margin: 0 2px; 
+	display: inline-block; 
+	width: 15px; 
+	height: 15px; 
+	background-image:url(../Theme/images/foucus/bg.png);
+	background-position: -161px 0; 
+	font: 0/0 arial; 
+	color: transparent; 
+	overflow: hidden; 
+	vertical-align: top; 
+}
+.hot-event .switch-tab .current { 
+	background-image: url(../Theme/images/foucus/bg.png); 
+	background-position: -195px 0; 
+}
+.hot-event .switch-nav { 
+	position: absolute; 
+	right: 10px; 
+	top: 310px; 
+	z-index: 2; 
+}
+
+.hot-event .switch-nav .i-prev { 
+	background-image: url(../Theme/images/foucus/bg.png); 
+	background-position: -127px 0; 
+}
+.hot-event .switch-nav .prev { 
+	border-radius: 3px 0 0 3px; 
+	border-width: 1px; 
+}
+.hot-event .switch-nav .next { 
+	border-radius: 0 3px 3px 0; 
+	border-width: 1px 1px 1px 0; 
+}
+.hot-event .switch-nav .i-next { 
+	background-image:url(../Theme/images/foucus/bg.png); 
+	background-position: -144px 0; 
+}
+.hot-event .switch-nav a { 
+	display: inline-block; 
+	padding: 7px 16px; 
+	background: rgba(0,0,0,.3); 
+	border-style: solid; 
+	border-color: rgba(255,255,255,.6); 
+}
+.hot-event .switch-nav a:hover { 
+	background: rgba(0,0,0,.2); 
+}
+.hot-event .event-item { 
+	height: 350px; 
+	width: 540px; 
+	position: absolute; 
+	z-index: 1; 
+	left: 0; 
+	top: 0; 
+}
+.hot-event .event-item .banner { 
+	display: block; 
+}
+.hot-event .event-item img { 
+	-webkit-box-reflect: below 0 -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(85%,transparent),to(rgba(255,255,255,.2))); 			
+	border: 0; 
+}
+.hide-clip { 
+	position: absolute!important; 
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px,1px,1px,1px); 
+	padding: 0!important; 
+	border: 0!important; 
+	height: 1px!important; 
+	line-height: 0!important; 
+	width: 1px!important; 
+	overflow: hidden; 
+}
+a { 
+	color: #4385a7; 
+}
+a { 
+	text-decoration: none; 
+}
+a .ico { 
+	cursor: pointer; 
+}
+.ico { 
+	display: inline-block; 
+	width: 16px; 
+	height: 16px; 
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+
+
+
+
+
+
+/*下面，主题城市部分*/
+.#lib_Tab1_sx{
+	width:960px;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+.lib_tabborder_sx{
+	border-top:1px solid #e7e7e7;
+}
+.lib_Menubox_sx {
+	line-height:28px;
+	position:relative; 
+	float:left; 
+	width:130px; 
+	height:1000px;
+	border-right:2px solid  #33847D;
+}
+.lib_Menubox_sx ul{
+	margin:0px;
+	padding:0px;
+	list-style:none; 
+	position:absolute; 
+	top:40px; 
+	left:6px;
+	margin-left:25px; 
+	height:30px;
+	text-align:center;
+}
+.lib_Menubox_sx li{
+	display:block;
+	cursor:pointer;
+	width:99px;
+	color:#33847D;
+	font-size:14px;
+	margin-bottom:30px;
+	height:40px;
+	line-height:40px; 
+	background-color:#FFFFFF; 
+	border:1px solid #33847D;
+	border-right:0;
+}
+.lib_Menubox_sx li.hover{
+	padding:0px;
+	background:#33847D;
+	width:100px;
+	border:1px solid #33847D; 
+	border-right:0;
+	color:#FFFFFF;
+	font-weight:bold; 
+	height:40px;
+	line-height:40px;
+}
+.lib_Contentbox_sx{
+	margin-top:0px; 
+	border-top:none;
+	padding:20px; 
+	border-left:0;
+	margin-left:130px;
+}
+
+
+/*tab标签下的内容，三亚*/
+/*tab标签下的内容,上面*/
+.tabtop{
+	width:790px;
+	height:300px;
+	border-bottom:1px solid #e7e7e7;
+}
+.tabtopleft{
+	width:350px;
+	height:250px;
+	float:left;
+	margin:0 20px 0 0;
+}
+
+.tabtopright{
+	width:420px;
+	float:right;
+	line-height:20px;
+}
+.tabtopright h2{
+	color:#CB6A30;
+	text-align:center;
+	margin:0 0 15px 0;
+}
+.lookcityhouse{
+	color:#FFFFFF;
+	text-align:center;
+	display:block;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	background:url(../Theme/images/lookcityhouse.png) no-repeat;
+	margin:20px 0 0 160px;
+}
+/*tab标签下的内容,中间*/
+.tabmiddle{
+	margin:20px 0 30px 0;
+}
+.tabmiddle h2{
+	color:#CB6A30;
+	margin:0 0 15px 0;
+}
+.tabmiddle table{
+	margin:0 0 0 20px;
+}
+.tabmiddle p{
+	color:#006666;
+}
+.price{
+	font-size:14px;
+}
+
+/*tab标签下的内容,下面*/
+.tabbelow h2{
+	color:#CB6A30;
+	margin:0 0 15px 0;
+}
+.tabbelow table{
+	margin:0 0 0 20px;
+}
+.tabbelow p{
+	color:#006666;
+}

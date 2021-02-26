@@ -1,0 +1,80 @@
+*{margin:0px; padding:0px;}
+body{
+	width:100%;
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+#container{
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+
+/*top头部*/
+#top{
+	width:910px;
+	height:75px;
+	background-color:#006666;
+	padding:0 0 0 50px;
+}
+
+/*注册部分*/
+#redister{
+	padding:200px 0 100px 0;
+	width:958px;
+	border-left:1px solid #006666;
+	border-bottom:1px solid #006666;
+	border-right:1px solid #006666;
+	font-size:20px;
+	color: #006666;
+}
+.remind{
+	color:#FF0000;
+	font-size:12px;
+}
+.change{
+	font-size:12px;
+	text-decoration:none;
+	color:#666666;
+}
+.agreement{
+	margin:30px 0 0 0;
+}
+.agreement a{
+	text-decoration:none;
+	font-size:12px;
+}
+.agreement a:hover{
+	text-decoration:underline;
+}
+#btn{
+	text-decoration:none;
+	font-size:20px;
+	color:#FFFFFF;
+	display:block;
+	background:url(../Account/images/rgsbtn.jpg) no-repeat;
+	height:40px;
+	width:120px;
+	line-height:40px;
+	padding:0 0 0 20px;
+}
+.rgsbtn{
+	margin-top:50px;
+}
+
+
+/*foot*/
+#foot{
+	text-align:center;
+	line-height:40px;
+	margin:50px 0 0 0;
+}
+#foot a{
+	text-decoration:none;
+	color:#009999;
+	font-size:16px;
+}
+#foot a:hover{
+	text-decoration:underline;
+}

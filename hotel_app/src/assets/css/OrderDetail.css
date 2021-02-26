@@ -1,0 +1,125 @@
+
+
+.clear{clear:both;}
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+	float:left;
+}
+.right-title a{
+	color:#FFFFFF;
+	width:150px;
+	height:30px;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	background:url(../UserInfo/images/modifybtn.jpg) no-repeat;
+	float:right;
+}
+
+/*订单列表*/
+.orderinfo{
+	width:770px;
+}
+.orderinfo a{
+	text-decoration:none;
+	color:blue;
+}
+.orderinfo a:hover{
+	text-decoration:underline;
+}
+.trbg{
+	width:770px;
+	height:30px;
+	background:url(../UserInfo/images/trbg.jpg) no-repeat;
+}
+.money{
+	color:#006666;
+	font-weight:bold;
+}
+.status{
+	color:#006666;
+}
+#paybtn{
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	display:block;
+	line-height:30px;
+	text-align:center;
+	background:url(../UserInfo/images/copybtn.jpg) no-repeat;
+}
+.tdborder{
+	border-bottom:1px solid #e7e7e7;
+}
+
+/*详情*/
+.detail{
+	width:768px;
+	height:auto;
+	margin:20px 0 0 0;
+	border:1px solid #e7e7e7;
+}
+/*详情标题*/
+.detailtitle{
+	width:758px;
+	height:30px;
+	line-height:30px;
+	padding:0 0 0 10px;
+	border-bottom:1px solid #e7e7e7;
+	background-color:#F6F6F6;
+}
+.detailtitle span{
+	font-size:14px;
+	font-weight:bold;
+}
+/*详情内容*/
+.detailcontent{
+	width:748px;
+	padding:10px;
+	line-height:20px;
+}
+.detailcontent p{
+	color:#666666;
+}
+.detailcontent label{
+	color:#000000;
+}
+
+/*管理公司信息*/
+.managementInfo{
+	width:768px;
+	height:auto;
+	margin:20px 0 0 0;
+	border:1px solid #e7e7e7;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+
+
+
+
+
+.clear{clear:both;}
+
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*支付宝、银行账号radio选项卡部分*/
+.radiochoose{
+	width:770px;
+	height:auto;
+}
+/*radio选项*/
+.bankinfo{
+	width:760px;
+	height:30px;
+	padding:0 0 0 10px;
+}
+.choosebank li{
+	float:left;
+	width:120px;
+}
+/*radio选项卡下面的内容*/
+.bankbox{
+	margin:20px 0 0 0;
+}
+.remind{
+	color:red;
+	font-size:12px;
+}
+
+.fillin{
+	color:#006666;
+	font-size:16px;
+}
+#savebtn{
+	color:#FFFFFF;
+	color:#FFFFFF;
+	font-size:14px;
+	text-align:center;
+	width:150px;
+	height:30px;
+	background:url(../UserInfo/images/modifybtn.jpg) no-repeat;
+}
+.vm{
+	color:#000000;
+	font-size:12px;
+}
+
+
+
+
+
+
+

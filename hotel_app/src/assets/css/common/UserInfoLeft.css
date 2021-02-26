@@ -1,0 +1,80 @@
+/*左侧部分*/
+#left{
+	width:150px;
+	margin:0 30px 0 0;
+	float:left;
+}
+#left a{
+	text-decoration:none;
+}
+#left a:hover{
+	text-decoration:underline;
+}
+/*左侧部分,用户基本信息*/
+.User{
+	width:140px;
+	height:50px;
+	line-height:17px;
+	padding:10px 0 10px 10px;
+	margin:0 0 10px 0;
+	background-image:url(../../Common/images/userbg.jpg);
+}
+.User a{
+	color:blue;
+}
+
+/*我的订单、消息与通知样式一样*/
+.MyOrders{
+	width:140px;
+	height:100px;
+	margin:0 0 10px 0;
+}
+.title{
+	width:150px;
+	height:30px;
+	background-image:url(../../Common/images/titlebg.jpg);
+}
+.titlename{
+	color:#FFFFFF;
+	font-weight:bold;
+	line-height:30px;
+	padding:0 0 0 10px;
+}
+.OrderOption{
+	width:140px;
+	height:50px;
+	line-height:25px;
+	padding:10px 0 10px 10px;
+	background-image:url(../../Common/images/userbg.jpg);
+}
+.OrderOption a{
+	color:#666666;
+	display:block;
+	padding:0 0 0 20px;
+	background:url(../../Common/images/list.png) no-repeat;
+	background-position:left center;
+}
+.OrderOption ul li{
+	list-style-type:none;
+}
+
+/*个人中心*/
+.PersonalCenter{
+	width:150px;
+	height:250px;
+	margin:0 0 10px 0;
+}
+.personalOption{
+	width:140px;
+	height:200px;
+	line-height:25px;
+	padding:10px 0 10px 10px;
+	background:url(../../Common/images/personalbg.jpg) no-repeat;
+}
+.personalOption a{
+	color:#666666;
+	display:block;
+	padding:0 0 0 20px;
+	background:url(../../Common/images/list.png) no-repeat;
+	background-position:left center;
+}

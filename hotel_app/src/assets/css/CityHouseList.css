@@ -1,0 +1,260 @@
+
+.clear{clear:both;}
+
+
+/*城市宣传图片*/
+#cityimg{
+	width:960px;
+	height:100px;
+	margin:0 0 20px 0;
+}
+
+/*搜索行*/
+#searchrow{
+	width:960px;
+	height:40px;
+	line-height:40px;
+	background:url(../House/images/searchrowbg.jpg);
+	margin:0 0 20px 0;
+}
+#searchrow table{
+	margin:0 0 0 8px;
+}
+
+/*时间、人数选择*/
+
+.Q{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+/*立即搜索*/
+
+#imserbtn{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0 0 0 40px;
+	display:block;
+	background:url(../House/images/searchnow.jpg) no-repeat;
+}
+
+
+
+/*细节搜索*/
+#searchdetail{
+	margin:0 0 20px 0;
+	width:950px;
+	line-height:30px;
+	padding:10px 10px 10px 0;
+	overflow:hidden;
+	background-color:#e7e7e7;
+}
+#searchdetail a{
+	color:#666666;
+	text-decoration:none;
+	margin:0 10px 0 0;
+}
+#searchdetail a:hover{
+	text-decoration:underline;
+}
+.detailtitle{
+	font-weight:bold;
+	color:#006666;
+}
+.ckbox{
+	margin:0 5px 0 0;
+}
+.mulchoice{
+	margin:0 20px 0 0;
+	color:#666666;
+}
+
+
+/*细节搜索版本2，搜索按钮*/
+
+
+
+
+
+/*所有房屋*/
+.subtitle{
+	width:960px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #006666;
+	margin:0 0 10px 0;
+}
+.wad{
+	width:100px;
+	height:30px;
+	text-align:center;
+	background-color:#006666;
+}
+.stitle{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+/*房屋列表*/
+#House{
+	width:960px;
+	height:auto;
+}
+#House a{
+	text-decoration:none;
+}
+#House a:hover{
+	text-decoration:underline;
+}
+/*排序方式*/
+.Sequence{
+	width:960px;
+	height:30px;
+	line-height:30px;
+	margin:5px 0 0 0;
+}
+.Sequence a{
+	color:#FFFFFF;
+	margin:0 10px 0 0;
+	float:left;
+}
+.defaultsorting{
+	background:url(../House/images/defaultsorting.jpg) no-repeat;
+	width:80px;
+	height:30px;
+	display:block;
+	text-align:center;
+}
+.area,.seprice{
+	width:35px;
+	height:30px;
+	display:block;
+	background:url(../House/images/area.jpg) no-repeat;
+	padding:0 0 0 25px;
+}
+
+
+
+/*排序下面的，列表*/
+
+.trbottom{
+	border-bottom:1px solid #CCCCCC;
+	padding:20px 0 10px 0;
+}
+.roominfo{
+	width:400px;
+	height:150px;
+	line-height:20px;
+}
+.housename{
+	color:blue;
+	font-size:14px;
+	font-weight:bold;
+}
+.namerow{
+	color:#999999;
+	font-weight:bold;
+}
+.wet{
+	font-weight:bold;
+}
+.convenience1{
+	color:#000000;
+	font-size:11px;
+	display:block;
+	float:left;
+	width:35px;
+	height:20px;
+	line-height:20px;
+	padding:0 0 0 18px;
+	background:url(../House/images/convenience1.jpg) no-repeat;
+}
+.convenience2{
+	color:#000000;
+	font-size:11px;
+	display:block;
+	float:left;
+	width:35px;
+	height:20px;
+	line-height:20px;
+	padding:0 0 0 18px;
+	background:url(../House/images/convenience2.jpg) no-repeat;
+}
+.convenience3{
+	color:#000000;
+	font-size:11px;
+	display:block;
+	float:left;
+	width:35px;
+	height:20px;
+	line-height:20px;
+	padding:0 0 0 18px;
+	background:url(../House/images/convenience3.jpg) no-repeat;
+}
+.convenience4{
+	color:#000000;
+	font-size:11px;
+	display:block;
+	float:left;
+	width:35px;
+	height:20px;
+	line-height:20px;
+	padding:0 0 0 18px;
+	background:url(../House/images/convenience4.jpg) no-repeat;
+}
+
+.address{
+	color:#999999;
+}
+.clrblue{
+	color:blue;
+}
+.clrgray{
+	color:#999999;
+	padding: 0 10px 0 0;
+}
+
+
+.price{
+	color:#999999;
+}
+.money{
+	font-size:20px;
+	font-weight:bold;
+	color:#006666;
+	width:50px;
+}
+/*房屋详情按钮*/
+.detailbtn{
+	color:#FFFFFF;
+	font-size:14px;
+	display:block;
+	width:100px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background:url(../House/images/detailbtn.jpg) no-repeat;
+}
+
+/*分页*/
+#changpage{
+	width:950px;;
+	height:30px;
+	line-height:30px;
+	padding:0 0 0 10px;
+	margin:10px 0 0 0;
+}
+#changpage a{
+	color:#006666;
+	margin:0 10px 0 0;
+	width:40px;
+	height:20px;
+	text-align:center;
+	float:left;
+	line-height:20px;
+	display:block;
+	background:url(../House/images/pre.jpg) no-repeat;
+}

@@ -1,0 +1,59 @@
+/*颈部*/
+#neck{
+	width:960px;
+	height:60px;
+	margin:20px 0 0 0;
+}
+
+/*颈部右侧，我的天堂鸟、在线客服、手机客户端、、、*/
+
+.link{
+	width:480px;
+	height:30px;
+	float:right;
+}
+.link a{
+	float:right;
+	text-decoration:none;
+	color:#FFFFFF;
+	display:block;
+	width:80px;
+	height:30px;
+	background:url(../../Common/images/linkbtn.jpg) no-repeat;
+	margin:0 5px 0 0;
+	text-align:center;
+	line-height:30px;
+}
+
+.link a:hover{
+	background:url(../../Common/images/linkbtnbg.jpg) no-repeat;
+}
+.link span{
+	line-height:30px;
+	float:right;
+}
+.username a{
+	background:none;
+	color:blue;
+}
+.username a:hover{
+	background:none;
+	text-decoration:underline;
+}
+
+
+/*颈部左侧，面包屑导航*/
+.bread{
+	width:400px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	margin:0 0 0 20px;
+}
+.bread a{
+	color:blue;
+	text-decoration:none;
+}
+.bread a:hover{
+	text-decoration:underline;
+}

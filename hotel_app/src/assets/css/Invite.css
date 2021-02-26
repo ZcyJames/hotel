@@ -1,0 +1,89 @@
+
+
+.clear{clear:both;}
+
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+
+/*邀请好友*/
+.invitefriends{
+	line-height:40px;
+}
+.invitefriends p{
+	color:#666666;
+}
+.method{
+	font-weight:bold;
+}
+/*方式一*/
+.method1{
+	border-bottom:1px solid #e7e7e7;
+	margin-bottom:10px;
+}
+#copybtn,#sentbtn{
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	line-height:30px;
+	background:url(../UserInfo/images/copybtn.jpg) no-repeat;
+	margin:10px 0 20px 0;
+}
+
+/*方法二*/
+.inviteMsg{
+	color:#666666;
+	font-size:12px;
+	line-height:20px;
+}
+.tarea{
+	float:left;
+}
+.txtremind{
+	width:200px;
+	height:60px;
+	line-height:30px;
+	float:left;
+	margin:0 0 0 20px;
+	border:1px solid #e7e7e7;
+	padding:10px;
+}
+.txtremind strong{
+	color:#006666;
+}
+
+
+
+
+
+
+
+
+
+
+
+

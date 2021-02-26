@@ -1,0 +1,62 @@
+
+
+
+.clear{clear:both;}
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*规则说明*/
+.rule{
+	width:730px;
+	line-height:25px;
+	padding:30px 20px 50px 20px;
+	background:#fafafa;
+	border:1px solid #e7e7e7;
+}
+.rule ol li{
+	margin-left:16px;
+	list-style-type:decimal;
+}
+.clorsame{
+	color:#006666;
+	font-weight:bold;
+}
+.invitebtn a{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	float:right;
+	color:#FFFFFF;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background:url(../UserInfo/images/modifybtn.jpg) no-repeat;
+	margin:10px 0 10px 0;
+}
+
+
+
+
+
+

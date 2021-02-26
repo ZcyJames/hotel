@@ -1,0 +1,175 @@
+.clear{
+	clear:both;
+}
+
+
+
+/*填写预定信息、支付定金、入住并点评*/
+#Tradingstep{
+	width:960px;
+	height:40px;
+	line-height:40px;
+	margin:0 0 20px 0;
+}
+#Tradingstep ul li{
+	width:150px;
+	margin:0 10px 0 0;
+	float:left;
+	display:block;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:14px;
+}
+.payment{
+	background:url(../Order/images/nowstep.jpg) no-repeat;
+	font-weight:bold;
+}
+.fillin,.checkincmt{
+	background:url(../Order/images/nextstep.jpg) no-repeat;
+}
+
+/*用户提示语*/
+.usertips{
+	width:940px;
+	padding:10px;
+	background-color:#F5F5F5;
+	line-height:20px;
+	margin:0 0 10px 0;
+}
+.usertips label{
+	color:#006666;
+	font-weight:bold;
+}
+
+
+
+/*订单号、订单状态*/
+.ordernubline{
+	width:920px;
+	height:30px;
+	line-height:30px;
+	padding:0 20px 0 20px;
+	background:url(../Order/images/ordernublinebg.jpg) no-repeat;
+}
+.ordernub{
+	float:left;
+}
+.orderstauts{
+	float:right;
+	line-height:30px;
+}
+.ordernub label{
+	color:#006666;
+	font-weight:bold;
+}
+.orderstauts label{
+	color:#006666;
+	font-weight:bold;
+	margin:0 20px 0 0;
+}
+#refresh{
+	width:50px;
+	height:20px;
+	margin:5px 0 0 0;
+	text-align:center;
+	color:#FFFFFF;
+	display:block;
+	float:right;
+	background:url(../Order/images/refreshbtn.jpg) no-repeat;
+}
+/*订单内容*/
+.ordercontent{
+	width:920px;
+	padding:20px;
+	line-height:25px;
+	border-bottom:1px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.fontblod{
+	color:#006666;
+	font-weight:bold;
+}
+
+/*待付款*/
+.pointpay{
+	width:920px;
+	padding:20px;
+	line-height:25px;
+	border-top:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+#pointusetxt{
+	width:60px;
+	height:20px;
+	margin:0 5px 0 0;
+	border:1px solid  #006666;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	float:left;
+}
+.unit{
+	float:left;
+}
+#pointusebtn{
+	color:#FFFFFF;
+	text-align:center;
+	width:50px;
+	height:20px;
+	display:block;
+	float:left;
+	margin:0 0 0 10px;
+	background:url(../Order/images/refreshbtn.jpg) no-repeat;
+}
+
+
+/*网银支付*/
+.bankpaytitle{
+	width:960px;
+	height:30px;
+	line-height:30px;
+}
+.bankpaytitle span{
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	text-align:center;
+	font-weight:bold;
+	display:block;
+	background:url(../Order/images/onlinebankbg.jpg) no-repeat;
+}
+.bank{
+	width:920px;
+	padding:20px;
+	border-top:2px solid #33847D;
+}
+#impaybtn{
+	color:#FFFFFF;
+	width:150px;
+	height:30px;
+	display:block;
+	text-align:center;
+	background:url(../Order/images/impaybtn.jpg) no-repeat;
+}
+
+/*交易规则*/
+.ruleinfotitle{
+	width:960px;
+	height:30px;
+	line-height:30px;
+}
+.ruleinfotitle span{
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	text-align:center;
+	font-weight:bold;
+	display:block;
+	background:url(../Order/images/onlinebankbg.jpg) no-repeat;
+}
+.rulecontnet{
+	width:920px;
+	padding:20px;
+	border-top:2px solid #33847D;
+	line-height:20px;
+}

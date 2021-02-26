@@ -1,0 +1,93 @@
+
+
+
+.clear{clear:both;}
+
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*全部、未评论、已评论radio选项卡部分*/
+.radiochoose{
+	width:770px;
+	height:auto;
+}
+/*radio选项*/
+.bankinfo{
+	width:760px;
+	height:30px;
+	padding:0 0 0 10px;
+}
+.choosebank li{
+	float:left;
+	width:120px;
+}
+/*radio选项卡下面的内容*/
+.bankbox{
+	margin:10px 0 0 0;
+}
+
+/*评论列表*/
+
+.bankcon{
+	line-height:20px;
+}
+.bankcon a{
+	text-decoration:none;
+	color:blue;
+}
+.bankcon a:hover{
+	text-decoration:underline;
+}
+.trbg{
+	width:770px;
+	height:30px;
+	margin:10px 0 0 0;
+	background:url(../UserInfo/images/trbg.jpg) no-repeat;
+}
+.roomtitle{
+	font-weight:bold;
+}
+.money{
+	color:#006666;
+	font-weight:bold;
+}
+.status{
+	color:#006666;
+}
+#btn{
+	color:#FFFFFF;
+	width:60px;
+	height:25px;
+	display:block;
+	line-height:25px;
+	text-align:center;
+	background:url(../UserInfo/images/addcomment.jpg) no-repeat;
+}
+
+
+
+
+
+
+

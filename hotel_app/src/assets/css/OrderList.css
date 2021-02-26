@@ -1,0 +1,114 @@
+
+
+
+.clear{clear:both;}
+
+
+
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*国内订单*/
+.subtitle{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #006666;
+	margin:0 0 10px 0;
+}
+.wad{
+	width:80px;
+	height:27px;
+	text-align:center;
+	margin:0 0 0 30px;
+	border-left:3px solid #006666;
+	border-top:3px solid #006666;
+	border-right:3px solid #006666;
+	border-bottom:3px solid #FFFFFF;
+}
+.stitle{
+	color:#006666;
+	font-weight:bold;
+}
+
+/*全部订单、为付款订单radio选项卡部分*/
+.radiochoose{
+	width:770px;
+	height:auto;
+}
+/*radio选项*/
+.bankinfo{
+	width:760px;
+	height:30px;
+	padding:0 0 0 10px;
+}
+.choosebank li{
+	float:left;
+	width:120px;
+}
+/*radio选项卡下面的内容*/
+.bankbox{
+	margin:10px 0 0 0;
+}
+/*订单列表*/
+
+.bankcon{
+	line-height:20px;
+}
+.bankcon a{
+	text-decoration:none;
+	color:blue;
+}
+.bankcon a:hover{
+	text-decoration:underline;
+}
+.trbg{
+	width:770px;
+	height:30px;
+	margin:10px 0 0 0;
+	background:url(../UserInfo/images/trbg.jpg) no-repeat;
+}
+.roomtitle{
+	font-weight:bold;
+}
+.money{
+	color:#006666;
+	font-weight:bold;
+}
+.status{
+	color:#006666;
+}
+#impaybtn,#impaybtn2{
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	display:block;
+	line-height:30px;
+	text-align:center;
+	background:url(../UserInfo/images/copybtn.jpg) no-repeat;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.hotel_api.dao.IUserDao">
+    <!-- 写入cache单列标签  表面在此映射中开启mybatis二级缓存-->
+    <cache  eviction="LRU" flushInterval="200000" readOnly="true" size="1024" />
+
+    <select id="selectUserByWhere" resultType="map" parameterType="String" useCache="true" flushCache="false">
+        select
+        tbu.USER_ID as userId,
+        tbu.USER_NAME as userName,
+        tbu.USER_PASSWORD as userPassWord,
+        tbu.USER_PHONE as userPhone
+        from tb_user as tbu
+        <where>
+            <if test="userName!=null and userName!=''">
+                tbu.USER_NAME=#{userName}
+            </if>
+            <if test="userPassWord!=null and userPassWord!=''">
+                and tbu.USER_PASSWORD=#{userPassWord}
+            </if>
+            <if test="userPhone!=null and userPhone!=''">
+                and tbu.USER_PHONE=#{userPhone}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insertUserOne" parameterType="map" flushCache="true">
+        insert into tb_user value (null,#{userName},#{userPassWord},#{userPhone})
+    </insert>
+
+    <update id="uploadUserByPhone" parameterType="map" flushCache="true">
+        update tb_user set USER_PASSWORD=#{userPassWord} where USER_PHONE=#{userPhone}
+    </update>
+
+</mapper>

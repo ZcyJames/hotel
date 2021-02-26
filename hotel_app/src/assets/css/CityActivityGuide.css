@@ -1,0 +1,143 @@
+.clear{
+	clear:both;
+}
+
+h2{
+	color:#006666;
+	margin:0 0 20px 0;
+	width:960px;
+}
+/*左侧*/
+.guidedetailleft{
+	width:660px;
+	margin:0 20px 0 0;
+	float:left;
+	line-height:25px;
+}
+
+.author,.time{
+	color:#006666;
+}
+.time{
+	margin:0 0 0 20px;
+}
+.text{
+	margin:20px 0 0 0;
+	border:solid #e7e7e7;
+	border-width:1px 0 0 0;
+	padding:20px 0 0 0;
+}
+.text p{
+	text-indent:2em;/*首行缩进*/
+}
+.activityimg{
+	margin:20px 0 0 0;
+	text-align:center;
+}
+
+.text h3{
+	margin:15px 0 15px 0;
+}
+.activityimg02{
+	margin:20px 134px 15px 134px;
+}
+
+
+
+/*右侧*/
+.guidedetailright{
+	width:280px;
+	float:right;
+}
+
+/*旅游指南推荐*/
+.righttitle{
+	height:30px;
+	width:280px;
+	background:url(../Theme/images/travelguide01.png) no-repeat;
+}
+.righttitle span{
+	font-size:14px;
+	color:#FFFFFF;
+	line-height:30px;
+	display:block;
+	padding:0 0 0 20px;
+	float:left;
+}
+.morecity{
+	color:#FFFFFF;
+	text-decoration:none;
+	line-height:30px;
+	float:right;
+	padding:0 20px 0 0;
+}
+.morecity:hover{
+	text-decoration:underline;
+}
+
+.guiderecommend{
+	padding:20px;
+	margin:0 0 20px 0;
+	width:238px;
+	border:solid #e7e7e7;
+	border-width:0 1px 1px 1px;
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+}
+.recommendimg{
+	padding:0 10px 0 0;
+}
+.recommendinfo{
+	line-height:20px;
+}
+.recommendinfo a{
+	color:blue;
+	text-decoration:none;
+}
+.recommendinfo a:hover{
+	text-decoration:underline;
+}
+
+/*热门关键词*/
+.hotkeys{
+	padding:20px;
+	margin:0 0 20px 0;
+	width:238px;
+	border:solid #e7e7e7;
+	border-width:0 1px 1px 1px;
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+}
+.hotkeys a{
+	color:blue;
+	text-decoration:none;
+	margin:0 8px 0 0;
+}
+.hotkeys a:hover{
+	color:red;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

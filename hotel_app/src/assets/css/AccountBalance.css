@@ -1,0 +1,112 @@
+
+.clear{clear:both;}
+
+
+/*右侧部分*/
+#right{
+	width:770px;
+	float:right;
+}
+
+/*右侧部分，标题*/
+.right-title{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #e7e7e7;
+	margin:0 0 10px 0;
+}
+.rtitle{
+	color:#006666;
+	font-weight:bold;
+	font-size:16px;
+}
+/*可用余额、账户状态、提现*/
+.subtitle{
+	width:770px;
+	height:30px;
+	line-height:30px;
+	border-bottom:3px solid #006666;
+	margin:0 0 10px 0;
+}
+.available{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	color:#666666;
+	font-size:14px;
+	margin:0 0 0 10px;
+	float:left;
+}
+.clorsame{
+	font-weight:bold;
+	color:#006666;
+}
+.acutstatus{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	color:#666666;
+	font-size:14px;
+	margin:0 0 0 100px;
+	float:left;
+}
+#withdrawbtn{
+	color:#FFFFFF;
+	float:right;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	width:50px;
+	height:25px;
+	line-height:25px;
+	margin:3px 10px 0 0;
+	background:url(../UserInfo/images/withdrawbtn.jpg) no-repeat;
+}
+
+/*类型、日期查询*/
+.conditionsearch{
+	width:770px;
+	height:50px;
+}
+.type{
+	width:120px;
+	height:30px;
+	float:left;
+	margin:10px 0 0 10px;
+}
+.date{
+	width:250px;
+	height:30px;
+	float:left;
+	margin:10px 0 0 50px;
+}
+#searbtn{
+	width:50px;
+	height:30px;
+	float:left;
+	line-height:30px;
+	margin:0 0 0 20px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	margin:10px 0 0 10px;
+	background:url(../UserInfo/images/serbtn.jpg) no-repeat;
+}
+
+/*账户余额表格*/
+.trbg{
+	width:770px;
+	height:30px;
+	background:url(../UserInfo/images/trbg.jpg) no-repeat;
+}
+.tdborder{
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+}
+
+
+
+
+

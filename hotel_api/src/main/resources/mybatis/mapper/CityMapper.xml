@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xyh.hotel_api.dao.ICityDao">
+
+<!--    <cache eviction="LRU" flushInterval="200000" readOnly="true" size="1024"/>-->
+
+    <select id="selectCityByName" parameterType="map" resultType="map" useCache="true" flushCache="false">
+        select * from tb_city where CITY_NAME=#{cityName}
+    </select>
+
+    <select id="getRoomsByWhere" parameterType="map" resultType="map">
+        select * from tb_house where HOUSE_CITY= #{cityName} limit 0,5
+    </select>
+
+    <!--通过cityName结合roomKind查询酒店房间信息 -->
+    <select id="getSpecialRooms" parameterType="map" resultType="map">
+        select * from tb_house
+        <where>
+            <if test="cityName != '' and cityName != null">
+                HOUSE_CITY=#{cityName}
+            </if>
+            <if test="roomKind != '' and roomKind != null and roomKind !='不限'">
+                and HOUSE_KIND=#{roomKind}
+            </if>
+            <if test="roomKind =='不限'">
+                and HOUSE_KIND like '%'
+            </if>
+        </where>
+        limit 0,5
+    </select>
+
+    <select id="getRoomById" resultType="map">
+        select * from tb_house where HOUSE_ID=#{houseId}
+    </select>
+
+    <select id="selectCityHouseByName" parameterType="map" resultType="map">
+        select * from tb_house where HOUSE_CITY=#{cityName} order by HOUSE_MARK DESC
+    </select>
+
+    <select id="getSanyaHouseByWhere" resultType="map" parameterType="map">
+        select * from tb_house
+        <where>
+            <if test="cityName != '' and cityName != null">
+                HOUSE_CITY=#{cityName}
+            </if>
+            <if test="houseKind != '' and houseKind != null and houseKind !='不限'">
+                and HOUSE_KIND=#{houseKind}
+            </if>
+            <if test="houseKind =='不限'">
+                and HOUSE_KIND like '%'
+            </if>
+            <if test="lowPrice != '' and lowPrice != null and
+                      highPrice != '' and highPrice != null
+                      and lowPrice &lt;  highPrice"
+                        >
+                and HOUSE_PRICE between #{lowPrice} and #{highPrice}
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天堂鸟-旅游指南</title>
+<link href="../css/TravelGuide.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/head.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/neck.css" rel="stylesheet" type="text/css" />
+<link href="../css/common/foot.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../public/js/head.js"></script>
+<script src="../Js/DestinationSearch/citySelector.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Js/travelguide/jquery-1.4a2.min.js"></script>
+<script type="text/javascript" src="../Js/travelguide/jquery.KinSlideshow-1.2.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#KinSlideshow").KinSlideshow();
+})
+</script>
+</head>
+
+<body>
+<div id="container">
+	<!--top 整个头部-->
+		<div id="nav">
+	  <!--logo-->
+	  <div class="logo"> <img src="../Common/images/logo.png" width="120" height="80" border="0"/> </div>
+	  <!--导航-->
+	  <ul id="navMenu">
+		<li><a href="#" rel='dropmenu1'>国内目的地</a></li>
+		<li><a href="#" rel='dropmenu2'>主题推荐</a></li>
+		<li><a href="#" rel='dropmenu3'>出游类型</a></li>
+		<li><a href="#" rel='dropmenu4'>旅游指南</a></li>
+	  </ul>
+	  <div class="attention"> 
+	  	<a href="#" class="atnimg"><img src="../Common/images/attention.jpg" width="70" height="25" border="0"/></a> 
+	  </div>
+	  <!--手动搜索-->
+	  <div class="search" valign="middle">
+		
+	  	<!--下拉框-->
+		<div class="selectBox">
+			<input type="text" class="cityinput" id="citySelect" value="城市名" style="border:0;background: none transparent scroll repeat 0% 0%;width:95px;height:20px;">
+		</div>	
+		
+		 <input name="text" type="text" class="searcText" style="border:0;background: none transparent scroll repeat 0% 0%;width:130px;height:20px;margin:10px 0 0 2px;float:left;"/>
+		 <div class="searcher">
+		 	<a href="#"><img src="../Common/images/searcher.jpg" width="20" height="20" border="0"/></a>
+		 </div>
+	  </div>
+	</div>
+	
+	<!--导航下拉菜单-->
+		<div id="dropmenu1" class="dropMenu">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="80" class="tdborder">
+					<span class="province">直辖市</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">北京</a></li>
+						<li><a href="#">上海</a></li>
+						<li><a href="#">天津</a></li>
+						<li><a href="#">重庆</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">港澳台</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">香港</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">海南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="../House/CityHouse.html">三亚</a></li>
+						<li><a href="#">博鳌(琼海)</a></li>
+						<li><a href="#">文章</a></li>
+						<li><a href="#">五指山</a></li>
+						<li><a href="#">陵水（三亚）</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">西南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">桂林</a></li>
+						<li><a href="#">大理</a></li>
+						<li><a href="#">丽江</a></li>
+						<li><a href="#">昆明</a></li>
+						<li><a href="#">腾冲</a></li>
+						<li><a href="#">西双版纳</a></li>
+						<li><a href="#">香格里拉</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">山东</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">青岛</a></li>
+						<li><a href="#">威海</a></li>
+						<li><a href="#">烟台</a></li>
+						<li><a href="#">蓬莱</a></li>
+						<li><a href="#">济南</a></li>
+						<li><a href="#">栖霞（烟台）</a></li>
+						<li><a href="#">枣庄</a></li>
+						<li><a href="#">泰安</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">江苏</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">南京</a></li>
+						<li><a href="#">无锡</a></li>
+						<li><a href="#">苏州</a></li>
+						<li><a href="#">南通</a></li>
+						<li><a href="#">扬州</a></li>
+						<li><a href="#">镇江</a></li>
+						<li><a href="#">盱眙</a></li>
+						<li><a href="#">周庄</a></li>
+						<li><a href="#">常州</a></li>
+						<li><a href="#">昆山</a></li>
+						<li><a href="#">连云港</a></li>
+						<li><a href="#">盐城</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">浙江</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">杭州</a></li>
+						<li><a href="#">千岛湖</a></li>
+						<li><a href="#">宁波</a></li>
+						<li><a href="#">舟山</a></li>
+						<li><a href="#">西塘</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">四川</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">成都</a></li>
+						<li><a href="#">九寨沟</a></li>
+						<li><a href="#">峨眉山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">广东</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">广州</a></li>
+						<li><a href="#">深圳</a></li>
+						<li><a href="#">珠海</a></li>
+						<li><a href="#">佛山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">山陕</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">西安</a></li>
+						<li><a href="#">延安</a></li>
+						<li><a href="#">平遥</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">东北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">大连</a></li>
+						<li><a href="#">营口</a></li>
+						<li><a href="#">哈尔滨</a></li>
+						<li><a href="#">沈阳</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">安徽</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">合肥</a></li>
+						<li><a href="#">黄山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">福建</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">福州</a></li>
+						<li><a href="#">厦门</a></li>
+						<li><a href="#">武夷山</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">江西</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">南昌</a></li>
+						<li><a href="#">庐山</a></li>
+						<li><a href="#">婺源</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">湖南湖北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">武汉</a></li>
+						<li><a href="#">长沙</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">河南</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">郑州汉</a></li>
+						<li><a href="#">洛阳</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">河北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">承德</a></li>
+						<li><a href="#">秦皇岛</a></li>
+						<li><a href="#">张家口</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">西北</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">兰州</a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tdborder">
+					<span class="province">内蒙古</span>
+				</td>
+				<td class="tdborder">
+					<ul>
+						<li><a href="#">呼伦贝尔</a></li>
+						<li><a href="#">满洲里</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+		<ul id="dropmenu2" class="dropMenu">
+			<li><a href="#">相约海岛</a></li>
+			<li><a href="#">海滨漫步</a></li>
+			<li><a href="#">休闲时光</a></li>
+			<li><a href="#">极致体验</a></li>
+			<li><a href="#">赏花踏青</a></li>
+		</ul>
+		<ul id="dropmenu3" class="dropMenu">
+			<li><a href="#">浪漫之旅</a></li>
+			<li><a href="#">家庭出游</a></li>
+			<li><a href="#">朋友聚会</a></li>
+		</ul>
+		
+		
+		<script type="text/javascript">cssdropdown.startchrome("navMenu")</script> 
+	<!--top 头部结束-->
+	
+	<!--颈部-->
+	<div id="neck">
+		<!--登录注册行-->
+		<div class="link">
+			<a href="#">手机客户端</a>
+			<a href="#">在线客服</a>
+			<a href="../UserInfo/OrderList.html">我的天堂鸟</a>
+			<a href="../Home.html">退出</a>
+			<div class="username">
+				<a href="../UserInfo/OrderList.html">187****9013</a>
+				<span>您好，</span>
+			</div>
+		</div>
+		
+		<!--面包屑导航-->
+		<div class="bread">
+			<a href="../Home.html">天堂鸟</a>
+			<span>></span>
+			<span>旅游指南</span>
+			
+		</div>
+		
+	</div>
+	<!--颈部结束-->
+	
+	<div class="clear"></div>
+	
+	<!--左侧部分-->
+	<div class="contentleft">
+		<!--焦点图-->
+		 <div id="KinSlideshow" style="visibility:hidden;">
+			<a href="CityGuide.html" target="_blank"><img src="images/travelguide/banner01.jpg" alt="三亚" width="660" height="300" border="0" /></a>
+			<a href="#" target="_blank"><img src="images/travelguide/banner02.jpg" alt="大连" width="660" height="300" border="0" /></a>
+			<a href="#" target="_blank"><img src="images/travelguide/banner03.jpg" alt="青岛" width="660" height="300" border="0" /></a>
+			<a href="#" target="_blank"><img src="images/travelguide/banner04.jpg" alt="上海" width="660" height="300" border="0" /></a>
+		</div>
+		<!--焦点图结束-->
+		
+		<!--旅游指南-->
+		<div class="travelguide">
+			<table>
+				<tr height="200">
+					<td valign="top"><a href="CityActivityGuide.html"><img src="images/guide01.jpg" width="200" height="150" border="0" /></a></td>
+					<td class="gowhere" valign="top">
+						<p><a href="CityActivityGuide.html" class="where">海南三亚保亭地区的黎族泼水节</a></p>
+						<p><span class="author">作者：</span><label>天堂鸟</label><span class="time">时间：</span><label>2020-8-02</label></p>
+						<p>海南三亚保亭地区的黎族泼水节是中国情人节“七夕”时最有看点的节日之一，海南保亭泼水节的全称是“中国海南七仙温泉嬉水节”，它和中国民间传说七仙女的故事有关，富有民族风情，从2002年开始，保亭黎族苗族自治县人民政府宣布这一节日成为当地人的传统节庆活动。来到海南保亭泼水节，不...<a href="CityActivityGuide.html" class="guidedetail">详情>></a></p>
+						<p><a href="CityActivityGuide.html" class="gowherebtn">三亚旅游</a></p>					</td>
+				</tr>
+				<tr height="200">
+					<td valign="top"><a href="#"><img src="images/guide02.jpg" width="200" height="150" border="0" /></a></td>
+					<td class="gowhere" valign="top">
+						<p><a href="#" class="where">大连近郊--大连近郊游去哪儿好</a></p>
+						<p><span class="author">作者：</span><label>天堂鸟</label><span class="time">时间：</span><label>2020-8-02</label></p>
+						<p>大连市一座得天独厚的旅游城市，有着非常优越的自然条件、丰富的海洋资源，周边还有很多值得一去的景区，大连近郊去哪儿好呢，这您就得把大连近郊旅游的景点好好的了解一下，根据自己所喜欢的景区，选在大连近郊的地方。<a href="#" class="guidedetail">详情>></a></p>
+						<p><a href="#" class="gowherebtn">大连旅游</a></p>					</td>
+				</tr>
+				<tr height="200">
+					<td valign="top"><a href="#"><img src="images/guide03.jpg" width="200" height="150" border="0" /></a></td>
+					<td class="gowhere" valign="top">
+						<p><a href="#" class="where">大连近郊--大连近郊游去哪儿好</a></p>
+						<p><span class="author">作者：</span><label>天堂鸟</label><span class="time">时间：</span><label>2020-8-02</label></p>
+						<p>大连市一座得天独厚的旅游城市，有着非常优越的自然条件、丰富的海洋资源，周边还有很多值得一去的景区，大连近郊去哪儿好呢，这您就得把大连近郊旅游的景点好好的了解一下，根据自己所喜欢的景区，选在大连近郊的地方。<a href="#" class="guidedetail">详情>></a></p>
+						<p><a href="#" class="gowherebtn">大连旅游</a></p>					</td>
+				</tr>
+				<tr height="200">
+					<td valign="top"><a href="#"><img src="images/guide04.jpg" width="200" height="150" border="0" /></a></td>
+					<td class="gowhere" valign="top">
+						<p><a href="#" class="where">大连近郊--大连近郊游去哪儿好</a></p>
+						<p><span class="author">作者：</span><label>天堂鸟</label><span class="time">时间：</span><label>2020-8-02</label></p>
+						<p>大连市一座得天独厚的旅游城市，有着非常优越的自然条件、丰富的海洋资源，周边还有很多值得一去的景区，大连近郊去哪儿好呢，这您就得把大连近郊旅游的景点好好的了解一下，根据自己所喜欢的景区，选在大连近郊的地方。<a href="#" class="guidedetail">详情>></a></p>
+						<p><a href="#" class="gowherebtn">大连旅游</a></p>					</td>
+				</tr>
+				<tr height="200">
+					<td valign="top"><a href="#"><img src="images/guide05.jpg" width="200" height="150" border="0" /></a></td>
+					<td class="gowhere" valign="top">
+						<p><a href="#" class="where">大连近郊--大连近郊游去哪儿好</a></p>
+						<p><span class="author">作者：</span><label>天堂鸟</label><span class="time">时间：</span><label>2020-8-02</label></p>
+						<p>大连市一座得天独厚的旅游城市，有着非常优越的自然条件、丰富的海洋资源，周边还有很多值得一去的景区，大连近郊去哪儿好呢，这您就得把大连近郊旅游的景点好好的了解一下，根据自己所喜欢的景区，选在大连近郊的地方。<a href="#" class="guidedetail">详情>></a></p>
+						<p><a href="#" class="gowherebtn">大连旅游</a></p>					</td>
+				</tr>
+			</table>
+			
+			<!--分页-->
+			<div class="page">
+				<a href="#" class="fristpage">首页</a>
+				<a href="#" class="pre">上一页</a>
+				<a href="#" class="pagenub">1</a>
+				<a href="#" class="pagenub">2</a>
+				<a href="#" class="next">下一页</a>
+				<a href="#" class="lastpage">尾页</a>
+			</div>
+			<!--分页结束-->
+			
+		</div>
+		<!--旅游指南结束-->
+		
+	</div>
+	<!--左侧部分结束-->
+	
+	<!--右侧部分-->
+	<div class="contentright">
+		<!--热门目的地-->
+		<div class="righttitle">
+			<span>热门目的地</span>
+			<a href="ChooseCity.html" class="morecity">更多>></a>
+		</div>
+		
+		<div class="hotDestination">
+			<table>
+				<tr height="20">
+					<td><a href="CityGuide.html">三亚</a></td>
+					<td><a href="#">拉萨</a></td>
+					<td><a href="#">北海</a></td>
+					<td><a href="#">承德</a></td>
+					<td><a href="#">石家庄</a></td>
+				</tr>
+				<tr height="20">
+					<td><a href="#">千岛湖</a></td>
+					<td><a href="#">天津</a></td>
+					<td><a href="#">秦皇岛</a></td>
+					<td><a href="#">香格里拉</a></td>
+					<td><a href="#">北京</a></td>
+				</tr>
+				<tr height="20">
+					<td><a href="#">大理</a></td>
+					<td><a href="#">桂林</a></td>
+					<td><a href="#">镇江</a></td>
+					<td><a href="#">上海</a></td>
+					<td><a href="#">大连</a></td>
+				</tr>
+				<tr height="20">
+					<td><a href="#">青岛</a></td>
+					<td><a href="#">黄山</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+			</table>
+		</div>
+		<!--热门目的地结束-->
+		
+		<!--热门资讯-->
+		<div class="righttitle">
+			<span>热门资讯</span>
+		</div>
+		<div class="hotnews">
+			<table>
+				<tr height="100">
+					<td valign="top" class="hotnewsimg">
+						<a href="CityActivityGuide.html"><img src="images/hotnews01.jpg" width="100" height="80" border="0" /></a>
+					</td>
+					<td valign="top" class="hotnewsinfo">
+						<p><a href="CityActivityGuide.html">桂平西山风景区</a></p>
+						<p>桂平西山风景区位于我国广西壮族自治区桂平市，是我国...</p>
+					</td>
+				</tr>
+				<tr height="100">
+					<td valign="top" class="hotnewsimg">
+						<a href="CityActivityGuide.html"><img src="images/hotnews02.jpg" width="100" height="80" border="0" /></a>
+					</td>
+					<td valign="top" class="hotnewsinfo">
+						<p><a href="CityActivityGuide.html">泰州乔园</a></p>
+						<p>泰州乔园是一个从古代保留至今的园林，乔园内的景色别...</p>
+				</tr>
+				
+				<tr height="100">
+					<td valign="top" class="hotnewsimg">
+						<a href="CityActivityGuide.html"><img src="images/hotnews03.jpg" width="100" height="80" border="0" /></a>
+					</td>
+					<td valign="top" class="hotnewsinfo">
+						<p><a href="CityActivityGuide.html">西湖美景</a></p>
+						<p>“三处西湖一色秋，钱塘颖水与罗浮”说的就是杭州西湖...</p>
+					</td>
+				</tr>
+				<tr height="100">
+					<td valign="top" class="hotnewsimg">
+						<a href="CityActivityGuide.html"><img src="images/hotnews04.jpg" width="100" height="80" border="0" /></a>
+					</td>
+					<td valign="top" class="hotnewsinfo">
+						<p><a href="CityActivityGuide.html">桂平西山风景区</a></p>
+						<p>桂平西山风景区位于我国广西壮族自治区桂平市，是我国...</p>
+					</td>
+				</tr>
+			
+			</table>
+		</div>
+		<!--热门资讯结束-->
+		
+	</div>
+	<!--右侧部分结束-->
+	
+	
+	<div class="clear"></div>
+	
+	
+	<!--foot-->
+	<div id="foot">
+			<a href="#">关于我们 |</a>
+			<a href="#">业务介绍 |</a>
+			<a href="#">加入天堂鸟 |</a>
+			<a href="#">帮助中心 |</a>
+			<a href="#">网站地图</a>
+			<p>@ Copyright 2020 tiantangniao.com 天堂鸟 版权所有 不得转载</p>
+			<p>京ICP备11043397号</p>
+	</div>
+	<!--foot结束-->
+	
+	
+</div>
+<script type="text/javascript">
+    var test=new Vcity.CitySelector({input:'citySelect'});
+    var test2=new Vcity.CitySelector({input:'citySelect1'});
+</script>
+</body>
+</html>

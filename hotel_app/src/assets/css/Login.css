@@ -1,0 +1,277 @@
+*{margin:0px; padding:0px;}
+body{
+	width:100%;
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:url(../Account/images/bg1.jpg) no-repeat;
+}
+
+#container{
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+
+/*top*/
+#top{
+	width:auto;
+	height:30px;
+	margin:50px 0 20px 0;
+	background:url(../Account/images/bg.jpg) repeat-x;
+}
+
+
+.middleright{
+	float:right;
+	margin:40px 80px 0 0;
+	width:350px;
+	height:310px;
+	background-color:#FFFFFF;
+}
+/*��¼��*/
+.login{
+	width:320px;
+	height:295px;
+	margin:15px 15px 0 15px;
+	background-color:#EEEEEE;
+}
+
+.title{
+	width:320px;
+	height:40px;
+	background:url(../Account/images/login-title.jpg) no-repeat;
+}
+.titlename{
+	color:#FF9900;
+	font-size:24px;
+	line-height:40px;
+	font-weight:bold;
+	margin:0 0 0 100px;
+}
+.loginmiddle{
+	margin:20px 0 0 30px;
+}
+.loginmiddle a:hover{
+	text-decoration:underline;
+}
+.q{
+	color:#006666;
+}
+.change{
+	color:blue;
+	text-decoration:none;
+}
+#btn{
+	color:#FF9900;
+	font-size:20px;
+	font-weight:bold;
+	width:150px;
+	height:30px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	line-height:30px;
+	background:url(../Account/images/loginbtn.jpg) no-repeat;
+}
+
+.save{
+	color:#006666;
+}
+.helplogin{
+	color:#FF9900;
+	text-decoration:none;
+}
+
+/*foot*/
+#foot{
+	text-align:center;
+	line-height:40px;
+	margin:50px 0 0 0;
+}
+#foot a{
+	text-decoration:none;
+	color:#009999;
+	font-size:16px;
+}
+#foot a:hover{
+	text-decoration:underline;
+}
+
+
+.p2{
+	width: 100%;
+	margin-left: 230px;
+	margin-top: 60px;
+	font-size: 28px;
+	color: white;
+	font-family:"Segoe MDL2 Assets";
+}
+.p1{
+	width: 100%;
+	margin-left: 230px;
+	color: white;
+	font-size: 40px;
+	font-style:italic;
+	margin-left: 0;
+	margin-top:200px;
+	text-align: center;
+	letter-spacing: 20px;
+}
+.in1{
+	height: 42px;
+	width: 90px;
+	margin-left: 30px;
+	cursor:pointer;
+}
+.b1{
+	font-size: 18px;
+	display: inline-block;
+	color:#BFBFBF;
+	border: 1px solid #D8D8D8;
+	border-radius: 2px;
+	background-color: transparent;
+	border-radius:5px;
+}
+.b2{
+	border: none;
+	font-size: 18px;
+	background-color:#F04142;
+	border-radius:5px;
+}
+.b2:hover{
+	background-color: #FF8585;
+
+}
+.layui-form-label{
+	font-size: 16px;
+	margin-left: 40px;
+	margin-top: 38px;
+}
+
+.layui-input-inline{
+	margin-left: 55px;
+	margin-top: 10px;
+}
+.layui-input{
+	width: 320px;
+	height: 40px;
+	border-radius:5px;
+}
+.css1{
+	padding-top: 0px;
+}
+.css2{
+	cursor:pointer;
+	font-style: '宋体';
+	font-size: 16px;
+	margin-left: 30px;
+}
+.css4{
+	margin-top: 10px;
+}
+.css3{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.css3:hover{
+	color:black;
+	cursor: pointer;
+}
+.css5{
+	margin-left: 55px;
+	font-size: 13px;
+}
+.css6{
+	height: 8px;
+}
+.css7{
+	color: #FF5E5E;
+	font-size: 12px;
+	float: left;
+	margin-left: 55px;
+}
+.css8{
+	height: 45px;
+	width: 320px;
+	background-color: #F85959;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.css9{
+	height: 35px;
+	width: 250px;
+}
+.css10{
+	width: 100%;
+	height: 50px;
+	background-color: #FAFAFA;
+}
+.css11{
+	float: left;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.css12{
+	height: 50px;
+	line-height: 60px;
+	margin-left: 200px;
+}
+.css13{
+	font-size: 10px;
+}
+.css14{
+	float: left;
+	padding-left: 15px;
+	color: #E9E9E9;
+}
+.css15{
+	font-size: 20px;
+	margin-left: 5px;
+	margin-top: 38px;
+
+}
+.css16{
+	float: left;
+	padding-left: 120px;
+	cursor: pointer;
+}
+.css17{
+	margin-top: 65px;
+	width: 100%;
+	height: 50px;
+	background-color: #FAFAFA;
+
+}
+.css18{
+	height: 45px;
+	width: 320px;
+	background-color: #F9F9F9;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: not-allowed;
+}
+.css19{
+	margin-top: 5px;
+	width: 100%;
+	height: 50px;
+	background-color: #FAFAFA;
+
+}
+.css20{
+	height: 50px;
+	line-height: 50px;
+	margin-left: 200px;
+}
+.css21{
+ 	position: relative;
+	float: left;
+	display: block;
+	padding: 9px 15px;
+	width: 80px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: right;
+	font-size: 16px;
+	margin-top: 38px;
+}
